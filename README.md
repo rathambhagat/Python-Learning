@@ -141,6 +141,18 @@ python-mastery/
 - Return values using `return`
 - Program structure with `main()` and helper functions (e.g., `square()`)
 
+### Topics Used: Conditionals
+
+- Comparison operators: `>`, `<`, `==`, `!=`, `>=`, `<=`
+- Conditional statements using `if`, `elif`, and `else`
+- Multiple `if` checks versus `if/elif/else` control flow
+- Logical operators such as `or`
+- Checking equality and inequality between values
+- Range-based conditions such as `90 <= score <= 100`
+- Simplified grade checking with descending comparisons like `score >= 90`
+- User input with type conversion using `int()`
+- Decision-based program flow for comparisons and grading systems
+
 ### Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
 - OOP clicked once we stopped thinking of classes as "templates" and started thinking of them as blueprints for objects that have memory
