@@ -94,7 +94,12 @@ TOMORROW: [next task]
 python-mastery/
 │
 ├── Phase-1-Just-Out-of-the-Egg/
-│   ├── PHASE-1.py
+│   ├── Conditionals
+|   ├── Exceptions
+|   ├── Functions and Variables
+|   |    ├── Functions and Variables.py
+|   ├── Loops
+|   ├── 
 ├── Phase-2-Heating-the-Iron/
 │   ├── 
 ├── Phase-3-Party-Shuru/
@@ -118,6 +123,22 @@ python-mastery/
 | Part 2: Control Flow | If-Else, For/While Loops, Break/Continue | 
 | Part 3: Functions | def, Parameters, Return, Scope, Modules | 
 | Part 4: Data Structures | Lists, Tuples, Dicts, Sets, OOP Intro | 
+
+### Summary of the Topics 
+
+### Topics Used: Functions and Variables
+
+- Variables and user input with `input()`
+- Output formatting with `print()` and f-strings
+- String methods: `strip()`, `capitalize()`, `title()`
+- String splitting and unpacking: `split(" ")`, `first, last`
+- Type conversion: `int()`, `float()`
+- Arithmetic operations and simple calculator logic
+- Number formatting and rounding: `round()`, `f"{z:,}"`, `f"{z:.2f}"`
+- Function creation using `def`
+- Function parameters and default values
+- Return values using `return`
+- Program structure with `main()` and helper functions (e.g., `square()`)
 
 ### Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
