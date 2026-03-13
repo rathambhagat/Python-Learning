@@ -27,7 +27,7 @@ Phase 4: Nanga Naach             ⏳ QUEUED
 ## ⚙️ How We Actually Work
 
 Most people learn alone, get bored, quit.  
-We solved that with a system.
+We solved that with a system. We did everything on a discord server.  
 
 ### 🏛️ The Discord Constitution
 
@@ -37,9 +37,9 @@ We solved that with a system.
 
 | Rule | What It Means |
 |------|--------------|
-| 🚫 No Code Vomit | Don't paste 10+ lines in chat. Use GitHub links. Penalty: the other person will touch you. |
+| 🚫 No Code Vomit | Don't paste 10+ lines in chat. Use GitHub links. Penalty: the other person will tgive you a treat. |
 | 🌅 Daily Ritual | Morning: post goal in `#daily-goals` before 10 AM. Night: post proof in `#end-of-the-day-report` before sleeping. |
-| 🇬🇧 English + Hinglish | Talk however, but variables and code comments = professional English. Recruiters don't read Hinglish. |
+| 🇬🇧 English + Hinglish | Talk however, but variables and code comments = professional English. |
 
 #### SECTION 2: THE 4 VILLAINS (Crisis Protocols)
 
@@ -95,6 +95,7 @@ python-mastery/
 │
 ├── Phase-1-Just-Out-of-the-Egg/
 │   ├── Conditionals
+|   |    ├── Conditionals.py
 |   ├── Exceptions
 |   ├── Functions and Variables
 |   |    ├── Functions and Variables.py
