@@ -153,6 +153,8 @@ python-mastery/
 - User input with type conversion using `int()`
 - Decision-based program flow for comparisons and grading systems
 
+
+
 ### Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
 - OOP clicked once we stopped thinking of classes as "templates" and started thinking of them as blueprints for objects that have memory
