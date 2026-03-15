@@ -1,6 +1,8 @@
 x = int(input("What's x? ")) #take value from the user
 y = int(input("What's y? "))
 
+# Doc note: `if` runs only when its condition evaluates to True.
+# Doc note: Comparison operators (`>`, `<`, `==`) compare values and return bool.
 if x > y : #if statement to check the condition
 	print(f"{x} is greater than {y}")
 if x < y : 
@@ -31,6 +33,8 @@ if x == y:
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
+# Doc note: `elif` checks the next condition only if earlier tests were False.
+# Doc note: `else` is the default branch when no prior condition matched.
 if x > y :
 	print("x is greater than y")
 elif x < y :
@@ -115,6 +119,7 @@ else:
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
+# Doc note: `or` returns True when at least one operand is True.
 if x > y or x < y:
 	print("x is not equal to y")
 else:
@@ -152,6 +157,7 @@ else:
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
+# Doc note: `!=` means “not equal to”.
 if x != y:
 	print("x is not equal to y")
 else:
@@ -186,6 +192,7 @@ else:
 
 # grade 
 score = int(input("Enter your score(0-100): "))
+# Doc note: Chained comparison (`90 <= score <= 100`) checks both bounds in one expression.
 if 90 <= score <= 100: #alternative syntax
 	print("Your Grade is A")
 elif 80 <= score < 90: #alternative syntax
@@ -298,6 +305,7 @@ else:
 #                                            +----------------------+
 
 x = int(input("What's x? "))
+# Doc note: `%` returns remainder; even numbers have remainder 0 when divided by 2.
 if x % 2 == 0:
     print("Even")
 else:
@@ -311,6 +319,7 @@ def main():
 		print("Odd")
 
 def is_even(n):
+	# Doc note: Returning a bool from a helper function improves readability and reuse.
 	return n % 2 == 0
 
 main()

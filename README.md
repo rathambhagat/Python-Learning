@@ -167,6 +167,42 @@ python-mastery/
 - List of dictionaries: storing structured records and accessing fields by key
 - `sep` parameter in `print()` to customise output separators
 
+### Topics Used: Libraries
+
+- Importing modules with `import` and calling functions via dot notation (`module.function()`)
+- `random` module: pseudo-random number generator (seed-based deterministic algorithm, not true physical randomness)
+  - `random.choice(seq)` — returns one random element from a non-empty sequence; raises `IndexError` if empty
+  - `random.randint(a, b)` — returns a random integer N where `a <= N <= b` (both bounds inclusive)
+  - `random.shuffle(seq)` — shuffles a list in-place (modifies the original, returns `None`)
+- `statistics` module: functions for numeric data analysis
+  - Central tendency: `mean()`, `median()`, `mode()`
+  - Spread: `stdev()`, `variance()`
+- `sys` module: access to interpreter-level variables and functions
+  - `sys.argv` — list of CLI arguments; `argv[0]` is the script name, `argv[1]` is the first user-supplied arg
+  - `sys.exit(msg)` — raises `SystemExit`; prints `msg` to stderr and terminates the program
+- `cowsay` (third-party, install via `pip install cowsay`): `cowsay.cow(msg)` prints ASCII cow art with the message
+- Security note: use the `secrets` module instead of `random` for cryptographic or security-sensitive randomness
+
+### Topics Used: Files
+
+- Opening files with `open(file, mode)` — returns a file object; raises `OSError` if the file cannot be opened
+- Write mode `'w'` — truncates the file before writing (existing content is wiped)
+- Append mode `'a'` — writes to the end of the file without erasing existing content
+- `file.write(str)` — writes a string; does not add a newline automatically
+- `file.close()` — flushes the write buffer and releases the OS file handle
+- Full mode reference: `'r'` read, `'w'` write/truncate, `'x'` exclusive create, `'a'` append, `'b'` binary, `'t'` text (default), `'+'` read+write
+- Best practice: use `with open(...) as f:` so the file closes automatically even if an error occurs
+
+### Topics Used: Unit Tests
+
+- Splitting logic and tests across files: `Test.py` holds logic; `Unit Test.py` imports and tests it
+- `from module import name` — imports only the specified name into this namespace (cleaner than full module import when you only need one item)
+- `assert expr` — evaluates the expression; raises `AssertionError` if False; the core building block of unit testing
+- Unit test function naming: prefixing with `test_` makes functions auto-discoverable by `pytest`
+- Running with `pytest` — finds and runs all `test_*` functions automatically; no need to call them manually
+- `if __name__ == "__main__":` guard — `__name__` equals `"__main__"` only when the script is run directly, not when imported; prevents test code from firing on import
+
+
 
 ### Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
