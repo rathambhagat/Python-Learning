@@ -153,6 +153,19 @@ python-mastery/
 - User input with type conversion using `int()`
 - Decision-based program flow for comparisons and grading systems
 
+### Topics Used: Loops
+
+- Repeating actions using `while` loops with a counter variable
+- Understanding loop flow: condition check → body → increment → repeat
+- `for` loops to iterate over a fixed list: `for i in [0,1,2]`
+- String repetition as a shorthand: `"Meow\n" * 3`
+- Input validation loop using `while True` with `break`
+- Generating number sequences with `range()`: `for i in range(0, n)`
+- Lists: creation, index-based access (`student[2]`), and iteration with `for`
+- Dictionaries: key-value pairs, accessing values with `dict[key]`, iterating over keys
+- Iterating a dict and printing both key and value: `print(student, Students[student])`
+- List of dictionaries: storing structured records and accessing fields by key
+- `sep` parameter in `print()` to customise output separators
 
 
 ### Key Takeaways
