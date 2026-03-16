@@ -202,6 +202,16 @@ python-mastery/
 - Running with `pytest` — finds and runs all `test_*` functions automatically; no need to call them manually
 - `if __name__ == "__main__":` guard — `__name__` equals `"__main__"` only when the script is run directly, not when imported; prevents test code from firing on import
 
+### Topics Used: OOP
+
+- Why OOP: when related values belong together, a class groups them into one custom type (cleaner than passing multiple loose variables)
+- `class Student:` — defines a user-created type (blueprint) for student objects
+- `student = Student()` — constructs an instance (object) of that class
+- Instance attributes (`student.name`, `student.house`) store object-specific state
+- Dot notation (`object.attribute`) reads/writes attributes attached to an object
+- Data-model progression shown in code: tuple → list → dict → class-based object representation
+- `if __name__ == "__main__":` guard ensures the script entry point runs only on direct execution
+
 
 
 ### Key Takeaways
