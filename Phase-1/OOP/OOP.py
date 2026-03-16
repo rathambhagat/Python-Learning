@@ -123,3 +123,19 @@ def get_student():
 if __name__ == "__main__":
     # Doc note: This guard runs `main()` only when this file is executed directly.
     main()
+class Student:
+    def __init__(self,name,house):
+        self.name = name
+        self.house = house
+
+def main():
+    student = get_student()
+    print(f"{student.name} from {student.house}")
+def get_student():
+    name = input("What's Your name?: ")
+    house = input("What's Your House?: ")
+    student = Student(name,house)
+    return student 
+if __name__ == "__main__":
+    main()
+
