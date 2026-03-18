@@ -25,6 +25,39 @@ def get_house():
 if __name__ == "__main__":
     main()
 
+
+class Student:
+	# # Doc note: `__init__` is the constructor; it initializes each new object.
+	def __init__(self,name,house):
+		# # Doc note: Validation inside the class keeps object state consistent.
+		if not name:
+			raise ValueError("Missing Name!")
+		self.name = name
+		self.house = house
+
+
+def main():
+	student = get_student()
+	# # Doc note: Dot notation accesses instance attributes.
+	print(f"{student.name} from {student.house}")
+
+
+def get_student():
+	# # Doc note: Keep asking until valid input creates a Student object.
+	while True:
+		name = input("What's Your name?: ")
+		house = input("What's Your House?: ")
+		try:
+			return Student(name,house)
+		except ValueError as error:
+			# # Doc note: `ValueError` indicates invalid constructor input.
+			print(error)
+
+
+if __name__ == "__main__":
+	# # Doc note: Entry-point guard runs `main()` only on direct execution.
+	main()
+
 def main():
     name, house = get_student()
     print(f"{name} from {house}")
@@ -123,11 +156,11 @@ def get_student():
 if __name__ == "__main__":
     # Doc note: This guard runs `main()` only when this file is executed directly.
     main()
+
 class Student:
     def __init__(self,name,house):
         self.name = name
         self.house = house
-
 def main():
     student = get_student()
     print(f"{student.name} from {student.house}")
@@ -139,3 +172,21 @@ def get_student():
 if __name__ == "__main__":
     main()
 
+class Student:
+    def __init__(self,name,house):
+        if not name:
+            raise ValueError("Missing Name!")
+        self.name = name
+        self.house = house
+def main():
+    student = get_student()
+    print(f"{student.name} from {student.house}")
+def get_student():
+    name = input("What's Your name?: ")
+    house = input("What's Your House?: ")
+    try:
+        return Student(name,house)
+    except Value:
+        ...
+if __name__ == "__main__":
+    main()

@@ -206,18 +206,22 @@ python-mastery/
 
 - Why OOP: when related values belong together, a class groups them into one custom type (cleaner than passing multiple loose variables)
 - `class Student:` — defines a user-created type (blueprint) for student objects
-- `student = Student()` — constructs an instance (object) of that class
+- `student = Student(name, house)` — constructs an instance and initializes it through the constructor
+- `__init__(self, name, house)` — constructor method used to set initial object state
+- Validation inside the class (`if not name: raise ValueError(...)`) protects object integrity
 - Instance attributes (`student.name`, `student.house`) store object-specific state
 - Dot notation (`object.attribute`) reads/writes attributes attached to an object
+- Exception handling with `try/except ValueError` handles invalid input cleanly
+- Retry loop (`while True`) continues prompting until valid data is entered
 - Data-model progression shown in code: tuple → list → dict → class-based object representation
 - `if __name__ == "__main__":` guard ensures the script entry point runs only on direct execution
-
-
 
 ### Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
 - OOP clicked once we stopped thinking of classes as "templates" and started thinking of them as blueprints for objects that have memory
 - CS50P's problem sets are harder than they look — don't skip them
+
+PHASE - 2: 
 
 ## 🤝 Connect With Us
 
