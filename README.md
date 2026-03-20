@@ -214,6 +214,11 @@ python-mastery/
 - Class variables (`class_year`, `num_students`) are shared by all instances (not per-object)
 - `ClassName.variable` accesses class variables; `self.variable` accesses instance variables
 - Incrementing class variables inside `__init__` tracks aggregate data (e.g., total instances created)
+- Single inheritance: child classes (`Dog`, `Cat`, `Mouse`) reuse parent (`Animal`) fields and methods
+- Method overriding / polymorphism: each child can implement its own `speak()` behavior
+- Multiple inheritance: `Fish(Predator, Prey)` inherits behaviors from both parent classes
+- Abstract Base Classes (`ABC`) + `@abstractmethod`: define required methods (`go`, `stop`) that subclasses must implement
+- Interface enforcement: classes like `Car`, `Motorcycle`, `Boat` provide concrete implementations of abstract methods
 - Exception handling with `try/except ValueError` handles invalid input cleanly
 - Retry loop (`while True`) continues prompting until valid data is entered
 - Data-model progression shown in code: tuple → list → dict → class-based object representation
