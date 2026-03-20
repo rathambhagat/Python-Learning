@@ -110,13 +110,13 @@ python-mastery/
 └── README.md 
 
 
-## 🐣 Phase 1: Just Out of the Egg
+🐣 Phase 1: Just Out of the Egg
 
 **Status:** ✅ COMPLETE  
 **Duration:** ~4 weeks  
 **Resource Used:** CS50P — Harvard Python Course (YouTube)
 
-### What We Covered
+ What We Covered
 
 | Part | Topics | Code |
 |------|--------|------|
@@ -125,106 +125,64 @@ python-mastery/
 | Part 3: Functions | def, Parameters, Return, Scope, Modules | 
 | Part 4: Data Structures | Lists, Tuples, Dicts, Sets, OOP Intro | 
 
-### Summary of the Topics 
+Summary of the Topics
 
-### Topics Used: Functions and Variables
+Topics Used: Functions and Variables
 
-- Variables and user input with `input()`
-- Output formatting with `print()` and f-strings
-- String methods: `strip()`, `capitalize()`, `title()`
-- String splitting and unpacking: `split(" ")`, `first, last`
-- Type conversion: `int()`, `float()`
-- Arithmetic operations and simple calculator logic
-- Number formatting and rounding: `round()`, `f"{z:,}"`, `f"{z:.2f}"`
-- Function creation using `def`
-- Function parameters and default values
-- Return values using `return`
-- Program structure with `main()` and helper functions (e.g., `square()`)
+- Took user input, stored data in variables, and printed formatted output.
+- Used string cleanup and formatting methods such as strip, capitalize, and title.
+- Split full names into parts and used type conversion for numbers.
+- Performed arithmetic and number formatting with rounding and decimal precision.
+- Built reusable functions, passed arguments, used default values, and returned results.
 
-### Topics Used: Conditionals
+Topics Used: Conditionals
 
-- Comparison operators: `>`, `<`, `==`, `!=`, `>=`, `<=`
-- Conditional statements using `if`, `elif`, and `else`
-- Multiple `if` checks versus `if/elif/else` control flow
-- Logical operators such as `or`
-- Checking equality and inequality between values
-- Range-based conditions such as `90 <= score <= 100`
-- Simplified grade checking with descending comparisons like `score >= 90`
-- User input with type conversion using `int()`
-- Decision-based program flow for comparisons and grading systems
+- Compared values using greater than, less than, equal to, and not equal to checks.
+- Used if, elif, and else to control program decisions.
+- Combined conditions with logical operators and range checks.
+- Applied conditional logic to practical examples like grading.
 
-### Topics Used: Loops
+Topics Used: Loops
 
-- Repeating actions using `while` loops with a counter variable
-- Understanding loop flow: condition check → body → increment → repeat
-- `for` loops to iterate over a fixed list: `for i in [0,1,2]`
-- String repetition as a shorthand: `"Meow\n" * 3`
-- Input validation loop using `while True` with `break`
-- Generating number sequences with `range()`: `for i in range(0, n)`
-- Lists: creation, index-based access (`student[2]`), and iteration with `for`
-- Dictionaries: key-value pairs, accessing values with `dict[key]`, iterating over keys
-- Iterating a dict and printing both key and value: `print(student, Students[student])`
-- List of dictionaries: storing structured records and accessing fields by key
-- `sep` parameter in `print()` to customise output separators
+- Repeated actions using while loops and counter updates.
+- Iterated through sequences using for loops and range.
+- Used break and continue for input validation and loop control.
+- Worked with lists and dictionaries, including indexing and iteration.
+- Printed cleaner output using custom separators.
 
-### Topics Used: Libraries
+Topics Used: Libraries
 
-- Importing modules with `import` and calling functions via dot notation (`module.function()`)
-- `random` module: pseudo-random number generator (seed-based deterministic algorithm, not true physical randomness)
-  - `random.choice(seq)` — returns one random element from a non-empty sequence; raises `IndexError` if empty
-  - `random.randint(a, b)` — returns a random integer N where `a <= N <= b` (both bounds inclusive)
-  - `random.shuffle(seq)` — shuffles a list in-place (modifies the original, returns `None`)
-- `statistics` module: functions for numeric data analysis
-  - Central tendency: `mean()`, `median()`, `mode()`
-  - Spread: `stdev()`, `variance()`
-- `sys` module: access to interpreter-level variables and functions
-  - `sys.argv` — list of CLI arguments; `argv[0]` is the script name, `argv[1]` is the first user-supplied arg
-  - `sys.exit(msg)` — raises `SystemExit`; prints `msg` to stderr and terminates the program
-- `cowsay` (third-party, install via `pip install cowsay`): `cowsay.cow(msg)` prints ASCII cow art with the message
-- Security note: use the `secrets` module instead of `random` for cryptographic or security-sensitive randomness
+- Imported modules and called their functions using dot notation.
+- Used the random library for pseudo-random choices, numbers, and shuffling.
+- Used the statistics library for central tendency and spread calculations.
+- Used the sys library for command-line arguments and controlled program exits.
+- Used a third-party library, cowsay, and noted that secrets is better for security-sensitive randomness.
 
-### Topics Used: Files
+Topics Used: Files
 
-- Opening files with `open(file, mode)` — returns a file object; raises `OSError` if the file cannot be opened
-- Write mode `'w'` — truncates the file before writing (existing content is wiped)
-- Append mode `'a'` — writes to the end of the file without erasing existing content
-- `file.write(str)` — writes a string; does not add a newline automatically
-- `file.close()` — flushes the write buffer and releases the OS file handle
-- Full mode reference: `'r'` read, `'w'` write/truncate, `'x'` exclusive create, `'a'` append, `'b'` binary, `'t'` text (default), `'+'` read+write
-- Best practice: use `with open(...) as f:` so the file closes automatically even if an error occurs
+- Opened files in different modes for reading, writing, and appending.
+- Wrote user input to text files and closed files properly after writing.
+- Reviewed standard file modes and their use cases.
+- Followed the safer pattern of automatic file closing with context management.
 
-### Topics Used: Unit Tests
+Topics Used: Unit Tests
 
-- Splitting logic and tests across files: `Test.py` holds logic; `Unit Test.py` imports and tests it
-- `from module import name` — imports only the specified name into this namespace (cleaner than full module import when you only need one item)
-- `assert expr` — evaluates the expression; raises `AssertionError` if False; the core building block of unit testing
-- Unit test function naming: prefixing with `test_` makes functions auto-discoverable by `pytest`
-- Running with `pytest` — finds and runs all `test_*` functions automatically; no need to call them manually
-- `if __name__ == "__main__":` guard — `__name__` equals `"__main__"` only when the script is run directly, not when imported; prevents test code from firing on import
+- Kept logic and test code in separate files for clarity.
+- Wrote checks with assertions to verify expected behavior.
+- Followed test naming conventions so tests can be discovered automatically.
+- Used the main guard pattern to prevent unintended execution during imports.
 
-### Topics Used: OOP
+Topics Used: OOP
 
-- Why OOP: when related values belong together, a class groups them into one custom type (cleaner than passing multiple loose variables)
-- `class Student:` — defines a user-created type (blueprint) for student objects
-- `student = Student(name, house)` — constructs an instance and initializes it through the constructor
-- `__init__(self, name, house)` — constructor method used to set initial object state
-- Validation inside the class (`if not name: raise ValueError(...)`) protects object integrity
-- Instance attributes (`student.name`, `student.house`) store object-specific state (unique per instance)
-- Dot notation (`object.attribute`) reads/writes attributes attached to an object
-- Class variables (`class_year`, `num_students`) are shared by all instances (not per-object)
-- `ClassName.variable` accesses class variables; `self.variable` accesses instance variables
-- Incrementing class variables inside `__init__` tracks aggregate data (e.g., total instances created)
-- Single inheritance: child classes (`Dog`, `Cat`, `Mouse`) reuse parent (`Animal`) fields and methods
-- Method overriding / polymorphism: each child can implement its own `speak()` behavior
-- Multiple inheritance: `Fish(Predator, Prey)` inherits behaviors from both parent classes
-- Abstract Base Classes (`ABC`) + `@abstractmethod`: define required methods (`go`, `stop`) that subclasses must implement
-- Interface enforcement: classes like `Car`, `Motorcycle`, `Boat` provide concrete implementations of abstract methods
-- Exception handling with `try/except ValueError` handles invalid input cleanly
-- Retry loop (`while True`) continues prompting until valid data is entered
-- Data-model progression shown in code: tuple → list → dict → class-based object representation
-- `if __name__ == "__main__":` guard ensures the script entry point runs only on direct execution
+- Moved from plain variables and collections to class-based object modeling.
+- Built classes with constructors to initialize object state.
+- Validated inputs inside classes to keep objects consistent.
+- Used class variables to track data shared across all instances.
+- Practiced inheritance, method overriding, and multiple inheritance.
+- Used abstract base classes to define required methods for subclasses.
+- Reinforced entry-point control and exception handling in object-based programs.
 
-### Key Takeaways
+Key Takeaways
 - Dictionaries are genuinely critical — every Phase 2 DSA pattern uses them
 - OOP clicked once we stopped thinking of classes as "templates" and started thinking of them as blueprints for objects that have memory
 - CS50P's problem sets are harder than they look — don't skip them
