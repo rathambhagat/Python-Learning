@@ -26,3 +26,5 @@ else:
     elif n > 20:
         print("Not Weird")
 
+# Problem Statemnt 3:
+
