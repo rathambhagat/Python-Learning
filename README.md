@@ -209,8 +209,11 @@ python-mastery/
 - `student = Student(name, house)` — constructs an instance and initializes it through the constructor
 - `__init__(self, name, house)` — constructor method used to set initial object state
 - Validation inside the class (`if not name: raise ValueError(...)`) protects object integrity
-- Instance attributes (`student.name`, `student.house`) store object-specific state
+- Instance attributes (`student.name`, `student.house`) store object-specific state (unique per instance)
 - Dot notation (`object.attribute`) reads/writes attributes attached to an object
+- Class variables (`class_year`, `num_students`) are shared by all instances (not per-object)
+- `ClassName.variable` accesses class variables; `self.variable` accesses instance variables
+- Incrementing class variables inside `__init__` tracks aggregate data (e.g., total instances created)
 - Exception handling with `try/except ValueError` handles invalid input cleanly
 - Retry loop (`while True`) continues prompting until valid data is entered
 - Data-model progression shown in code: tuple → list → dict → class-based object representation
