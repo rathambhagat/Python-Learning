@@ -335,10 +335,12 @@ boat_obj.go()
 boat_obj.stop()
 
 class Shape:
+    # # Doc note: Parent class stores state common to all shape types.
     def __init__(self,color,is_filled):
         self.color = color
         self.is_filled = is_filled
 class Circle(Shape):
+    # # Doc note: `super()` calls the parent constructor to reuse shared initialization.
     def __init__(self,color,is_filled,radius):
         super().__init__(color,is_filled)
         self.radius = radius
@@ -351,6 +353,7 @@ class Triangle(Shape):
         super().__init__(color,is_filled)
         self.width = width
         self.height = height
+# # Doc note: Instances below show inherited attributes (color, is_filled) plus child-specific ones.
 circle = Circle(color='Red',is_filled = True, radius = 5)
 square = Square(color='Blue', is_filled = False, width = 4)
 triangle = Triangle(color='Green', is_filled=True, width = 5, height = 7)
@@ -363,12 +366,14 @@ print(triangle.color)
 
 from abc import ABC, abstractmethod
 class Shape:
+    # # Doc note: Abstract class declares behavior (`area`) that concrete shapes must implement.
     @abstractmethod
     def area(self):
         pass
 class Circle:
     def __init__(self,radius):
         self.radius = radius
+    # # Doc note: Concrete implementation of polymorphic `area()` method.
     def area(self):
         return 3.14*self.radius*self.radius
 class Square:
@@ -382,6 +387,7 @@ class Triangle:
         self.height = height
     def area(self):
         return 1/2 * self.base * self.height
+# # Doc note: Polymorphism — same method call (`area`) works across different shape objects.
 shapes = [Circle(5),Square(6),Triangle(3,4)]
 for shape in shapes:
     print(shape.area())
@@ -393,6 +399,7 @@ class Employee:
     def get_info(self):
         return {f"{self.name} in {self.position}"}
     
+    # # Doc note: `@staticmethod` belongs to the class namespace and does not use `self` or `cls`.
     @staticmethod
     def is_valid_position(position):
         valid_positions = ["Manager","Cashier","Cook","Janitor"]
@@ -404,6 +411,7 @@ else:
     print("You are a fraud!") 
 
 class Student:
+    # # Doc note: Class variable shared by all Student objects.
     count = 0
     def __init__(self, name,gpa):
         self.name = name
@@ -411,7 +419,7 @@ class Student:
         Student.count += 1
     def get_info(self):
         return f"{self.name} with {self.gpa}"
-    
+    # # Doc note: `@classmethod` receives `cls` and is used for class-level operations.
     @classmethod
     def get_count(cls):
         return f"Total NUmber of Students is {cls.count}"
@@ -419,3 +427,17 @@ student1 = Student("Pratham",9.8)
 student2 = Student("Vivan",3.4)
 print(Student.get_count())
 
+class Rectangle:
+    def __init__(self,width,height):
+        # # Doc note: Leading underscore signals internal-use attributes by convention.
+        self._width = width
+        self._height = height
+    # # Doc note: `@property` lets method access look like a read-only attribute.
+    @property
+    def width(self):
+        return f"{self._width:.1f} cm"
+    @property
+    def height(self):
+        return f"{self._height:.1f} cm"
+rectangle = Rectangle(3,4)
+print(rectangle.width)

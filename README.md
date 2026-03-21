@@ -180,6 +180,11 @@ Topics Used: OOP
 - Used class variables to track data shared across all instances.
 - Practiced inheritance, method overriding, and multiple inheritance.
 - Used abstract base classes to define required methods for subclasses.
+- Reused parent initialization in child classes through super calls.
+- Practiced polymorphism by calling the same area method on different shape objects.
+- Used static methods for validation logic that does not depend on object state.
+- Used class methods for class-level operations such as total object counting.
+- Used properties to expose computed, formatted values as clean attribute-style access.
 - Reinforced entry-point control and exception handling in object-based programs.
 
 Key Takeaways
