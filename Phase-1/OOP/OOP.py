@@ -385,3 +385,37 @@ class Triangle:
 shapes = [Circle(5),Square(6),Triangle(3,4)]
 for shape in shapes:
     print(shape.area())
+
+class Employee:
+    def __init__(self,name,position):
+        self.name = name
+        self.position = position
+    def get_info(self):
+        return {f"{self.name} in {self.position}"}
+    
+    @staticmethod
+    def is_valid_position(position):
+        valid_positions = ["Manager","Cashier","Cook","Janitor"]
+        return position in valid_positions
+p = input("Enter Your Position: ")
+if Employee.is_valid_position(p):
+    print("It's a valid position")
+else:
+    print("You are a fraud!") 
+
+class Student:
+    count = 0
+    def __init__(self, name,gpa):
+        self.name = name
+        self.gpa = gpa
+        Student.count += 1
+    def get_info(self):
+        return f"{self.name} with {self.gpa}"
+    
+    @classmethod
+    def get_count(cls):
+        return f"Total NUmber of Students is {cls.count}"
+student1 = Student("Pratham",9.8)
+student2 = Student("Vivan",3.4)
+print(Student.get_count())
+
