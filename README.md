@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **10 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **11 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -215,6 +215,7 @@ Phase 2 focuses on solving **10 foundational HackerRank problems** while reinfor
 | 8 | 3D Coordinates | List Comprehensions, Nested Loops, Filtering |
 | 9 | Alphabet Rangoli | String Patterns, Slicing, Symmetry, Formatting |
 | 10 | Capitalize Full Name | String Split/Join, Word Capitalization |
+| 11 | Nested Lists (Second Lowest Grade) | Nested Lists, Min/Second-Min Logic, Sorting |
 
 #### Key Learning Points
 
@@ -235,9 +236,12 @@ Phase 2 focuses on solving **10 foundational HackerRank problems** while reinfor
 - ✅ Pattern generation using alphabet slicing
 - ✅ Center alignment and formatted output
 - ✅ Word-wise capitalization for name formatting
+- ✅ Working with nested lists of records
+- ✅ Finding second minimum values safely
+- ✅ Sorting filtered results for stable output
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 10 problems
+- ✅ Created `Hackerrank(easy).py` with all 11 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -250,7 +254,7 @@ Phase 2 focuses on solving **10 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 10 solved problems)
+│   ├── Hackerrank(easy).py          (all 11 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -261,6 +265,7 @@ Phase-2/
 - List comprehensions are powerful but require careful understanding of nested loops
 - Input validation prevents bugs before they happen
 - Pattern-printing problems improve command over indexing and formatting
+- Record-processing problems improve confidence with real-world data handling
 
 ---
 

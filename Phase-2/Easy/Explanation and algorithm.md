@@ -574,3 +574,62 @@ flowchart TD
 - Time Complexity: `O(n)` where `n` is length of input string
 - Space Complexity: `O(n)` for split/join intermediate data
 
+---
+
+# Problem Statement 11: Nested Lists (Second Lowest Grade)
+
+## Problem Idea
+Given `N` student records as `[name, score]`, print the name(s) of students who have the **second lowest** score. If multiple students share that score, print names in alphabetical order.
+
+---
+
+## Explanation
+The program solves this in clear phases:
+- Read all student records into a nested list.
+- Find the minimum score.
+- Find the smallest score strictly greater than the minimum (second lowest).
+- Collect all names with second-lowest score.
+- Sort names alphabetically and print each on a new line.
+
+This handles ties correctly and ensures output order is deterministic.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `n` (number of students).
+3. Repeat `n` times:
+    - Read `name`.
+    - Read `score`.
+    - Append `[name, score]` to `records`.
+4. Set `lowest = +infinity` and scan all scores to find the minimum.
+5. Set `second_lowest = +infinity` and scan all scores again:
+    - If `lowest < score < second_lowest`, update `second_lowest`.
+6. Create `names` list of students where `score == second_lowest`.
+7. Sort `names` alphabetically.
+8. Print each name on a new line.
+9. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+     A([Start]) --> B[/Input n/]
+     B --> C["records = []"]
+     C --> D["Read n pairs: name, score"]
+     D --> E["Find lowest score"]
+     E --> F["Find second_lowest where lowest < score"]
+     F --> G["Collect names with score == second_lowest"]
+     G --> H["Sort names alphabetically"]
+     H --> I["Print each name"]
+     I --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n log n)` in worst case (sorting selected names dominates)
+- Space Complexity: `O(n)` (records + names storage)
+
