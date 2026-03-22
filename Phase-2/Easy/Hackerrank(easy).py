@@ -100,7 +100,7 @@ def is_leap(year):
 year = int(input())
 print(is_leap(year))
 
-#Problem Statement 7
+# Problem Statement 7
 """
 The included code stub will read an integer,n,from STDIN.
 Without using any string methods, try to print the following:
@@ -115,7 +115,7 @@ if n >= 1 and n <= 150:
 else: 
     print("Follow the Constraints")
 
-#Problem Statement 8
+# Problem Statement 8
 """
 You are given three integers x, y and z representing the dimensions of a cuboid along with an integer n.
 Print a list of all possible coordinates given by (i, j, k) on a 3D grid where the sum of i + j + k is not equal to n.
@@ -127,3 +127,64 @@ if __name__ == '__main__':
     z = int(input())
     n = int(input())
     print([[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n])
+
+# Problem Statement 9
+"""
+You are given an integer,N. Your task is to print an alphabet rangoli of size N. 
+(Rangoli is a form of Indian folk art based on creation of patterns.)
+Different sizes of alphabet rangoli are shown below:
+
+#size 3
+
+----c----
+--c-b-c--
+c-b-a-b-c
+--c-b-c--
+----c----
+
+#size 5
+
+--------e--------
+------e-d-e------
+----e-d-c-d-e----
+--e-d-c-b-c-d-e--
+e-d-c-b-a-b-c-d-e
+--e-d-c-b-c-d-e--
+----e-d-c-d-e----
+------e-d-e------
+--------e--------
+"""
+def print_rangoli(size):
+    import string
+    alpha = string.ascii_lowercase
+    lines = []
+    for i in range(size):
+        s = alpha[i:size]
+        row = "-".join(s[::-1] + s[1:])
+        lines.append(row.center(4 * size - 3, "-"))
+    print('\n'.join(lines[::-1] + lines[1:]))
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
+
+# Problem Statement 10
+"""
+You are asked to ensure that the first and last names of people begin with a capital letter in their passports.
+For example, alison heck should be capitalised correctly as Alison Heck.
+Given a full name, your task is to capitalize the name appropriately.
+"""
+def solve(s):
+        words = s.split(" ")
+        capitalized_words = [word.capitalize() for word in words]
+        return " ".join(capitalized_words)
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+

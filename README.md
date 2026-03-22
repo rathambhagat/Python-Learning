@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **8 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **10 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -213,6 +213,8 @@ Phase 2 focuses on solving **8 foundational HackerRank problems** while reinforc
 | 6 | Leap Year Checker | Complex Conditionals, Modulo Operator, Priority Logic |
 | 7 | Print Consecutive Numbers | String Concatenation (without breaks), Loop Control |
 | 8 | 3D Coordinates | List Comprehensions, Nested Loops, Filtering |
+| 9 | Alphabet Rangoli | String Patterns, Slicing, Symmetry, Formatting |
+| 10 | Capitalize Full Name | String Split/Join, Word Capitalization |
 
 #### Key Learning Points
 
@@ -230,9 +232,12 @@ Phase 2 focuses on solving **8 foundational HackerRank problems** while reinforc
 - ✅ String formatting and concatenation
 - ✅ List comprehensions with filters
 - ✅ Function definitions and return values
+- ✅ Pattern generation using alphabet slicing
+- ✅ Center alignment and formatted output
+- ✅ Word-wise capitalization for name formatting
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 8 problems
+- ✅ Created `Hackerrank(easy).py` with all 10 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -245,7 +250,7 @@ Phase 2 focuses on solving **8 foundational HackerRank problems** while reinforc
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 8 solved problems)
+│   ├── Hackerrank(easy).py          (all 10 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -255,6 +260,7 @@ Phase-2/
 - Flowcharts make complex logic much clearer to review later
 - List comprehensions are powerful but require careful understanding of nested loops
 - Input validation prevents bugs before they happen
+- Pattern-printing problems improve command over indexing and formatting
 
 ---
 

@@ -466,3 +466,111 @@ flowchart TD
 - Time Complexity: `O(x * y * z)` (three nested loops)
 - Space Complexity: `O(x * y * z)` (for the output list)
 
+---
+
+# Problem Statement 9: Alphabet Rangoli
+
+## Problem Idea
+Given an integer `N`, print an alphabet rangoli pattern of size `N` using lowercase letters and hyphens (`-`).
+
+---
+
+## Explanation
+The function builds the rangoli in two halves:
+- It first creates each row from top to middle using slices of the alphabet.
+- For each row, letters are mirrored around the center and joined with hyphens.
+- Each row is centered using a fixed width: `4 * size - 3`.
+- Finally, the full pattern is formed by combining the upper half in reverse plus the lower half.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `size`.
+3. Store lowercase letters in `alpha`.
+4. Initialize an empty list `lines`.
+5. For `i` from `0` to `size - 1`:
+   - Take `s = alpha[i:size]`.
+   - Build mirrored row: `s[::-1] + s[1:]`.
+   - Join with `-` and center to width `4 * size - 3`.
+   - Append row to `lines`.
+6. Print `lines[::-1] + lines[1:]` line by line.
+7. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input size/]
+    B --> C["alpha = a..z"]
+    C --> D["lines = []"]
+    D --> E["i = 0"]
+
+    E --> F{i < size?}
+    F -- No --> G["Print lines[::-1] + lines[1:]"]
+    G --> Z([End])
+
+    F -- Yes --> H["s = alpha[i:size]"]
+    H --> I["row = '-'.join(s[::-1] + s[1:])"]
+    I --> J["row = row.center(4*size-3, '-')"]
+    J --> K["Append row to lines"]
+    K --> L["i = i + 1"]
+    L --> F
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(size^2)` (building and formatting each row)
+- Space Complexity: `O(size^2)` (storing output rows)
+
+---
+
+# Problem Statement 10: Capitalize Full Name
+
+## Problem Idea
+Given a full name string, capitalize the first letter of each word while preserving spaces between words.
+
+---
+
+## Explanation
+The function:
+- Splits the input string by spaces.
+- Capitalizes each word using `capitalize()`.
+- Joins all words back with spaces.
+
+This ensures names like `alison heck` become `Alison Heck`.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read input string `s`.
+3. Split `s` into words by spaces.
+4. For each word, apply `capitalize()`.
+5. Join transformed words using spaces.
+6. Return/print the final string.
+7. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input full name s/]
+    B --> C["words = s.split(' ')"]
+    C --> D["capitalized = [w.capitalize() for w in words]"]
+    D --> E["result = ' '.join(capitalized)"]
+    E --> F["Print/Return result"]
+    F --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is length of input string
+- Space Complexity: `O(n)` for split/join intermediate data
+
