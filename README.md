@@ -192,7 +192,71 @@ Key Takeaways
 - OOP clicked once we stopped thinking of classes as "templates" and started thinking of them as blueprints for objects that have memory
 - CS50P's problem sets are harder than they look — don't skip them
 
-PHASE - 2: 
+## 🔥 Phase 2: Heating the Iron
+
+**Status:** 🔥 IN PROGRESS  
+**Resource:** HackerRank Easy Problems
+
+### What We Did in Phase 2
+
+Phase 2 focuses on solving **8 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+
+#### Problems Solved
+
+| # | Problem | Concepts Covered |
+|---|---------|-----------------|
+| 1 | Print "Hello, World!" | Basic Output |
+| 2 | Weird or Not Weird | Conditionals, Range Checking |
+| 3 | Arithmetic Operations | Basic Math, Multiple Operations |
+| 4 | Integer and Float Division | Division Types, Error Handling, Edge Cases |
+| 5 | Print Squares of Numbers | Loops, Iteration, Input Validation |
+| 6 | Leap Year Checker | Complex Conditionals, Modulo Operator, Priority Logic |
+| 7 | Print Consecutive Numbers | String Concatenation (without breaks), Loop Control |
+| 8 | 3D Coordinates | List Comprehensions, Nested Loops, Filtering |
+
+#### Key Learning Points
+
+**Problem Solving Skills:**
+- ✅ Breaking down problems into clear steps before coding
+- ✅ Creating flowcharts to visualize logic flow
+- ✅ Writing algorithms in plain English first
+- ✅ Documenting explanations for future reference
+
+**Python Concepts Reinforced:**
+- ✅ Nested conditionals and complex decision logic
+- ✅ Modulo operator (%) for divisibility checks
+- ✅ Loop structures (while, for) and iteration
+- ✅ Input validation and error handling
+- ✅ String formatting and concatenation
+- ✅ List comprehensions with filters
+- ✅ Function definitions and return values
+
+**Code Organization:**
+- ✅ Created `Hackerrank(easy).py` with all 8 problems
+- ✅ Created `Explanation and algorithm.md` with:
+  - Problem statement for each
+  - Clear explanation of approach
+  - Step-by-step algorithm
+  - Mermaid flowcharts (visual representation)
+  - Time and space complexity analysis
+
+#### File Structure
+
+```
+Phase-2/
+├── Easy/
+│   ├── Hackerrank(easy).py          (all 8 solved problems)
+│   └── Explanation and algorithm.md (documentation)
+```
+
+#### Takeaways
+
+- Documenting solutions immediately helps solidify understanding
+- Flowcharts make complex logic much clearer to review later
+- List comprehensions are powerful but require careful understanding of nested loops
+- Input validation prevents bugs before they happen
+
+---
 
 ## 🤝 Connect With Us
 
