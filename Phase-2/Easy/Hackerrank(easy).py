@@ -290,7 +290,32 @@ if __name__ == '__main__':
 
 # Problem Statement 14
 """
-
+You are given a string and your task is to swap cases.
+In other words, convert all lowercase letters to uppercase letters and vice versa.
+For Example:
+Www.HackerRank.com → wWW.hACKERrANK.COM
+Pythonist 2 → pYTHONIST 2  
 """
+def swap_case(s):
+    s.swapcase()
+    return s.swapcase()
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+
+# Problem Statement 15 
+"""
+You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+"""
+def split_and_join(line):
+    line = line.split(" ")
+    line = "-".join(line)
+    return line
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
 
 
