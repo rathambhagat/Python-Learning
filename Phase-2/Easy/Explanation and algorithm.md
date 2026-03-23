@@ -690,3 +690,84 @@ flowchart TD
 - Time Complexity: `O(n + m)` where `n` is number of students and `m` is marks count for queried student
 - Space Complexity: `O(total_marks)` for dictionary storage
 
+---
+
+# Problem Statement 13: Lists (Command Processing)
+
+## Problem Idea
+Initialize an empty list and process `N` commands. Each command modifies or prints the list.
+
+Supported commands:
+- `insert i e`
+- `print`
+- `remove e`
+- `append e`
+- `sort`
+- `pop`
+- `reverse`
+
+---
+
+## Explanation
+The program reads the number of commands, then handles each command line one by one:
+- It splits command input into tokens.
+- The first token decides operation type.
+- Depending on operation, it converts needed arguments to integers and applies the matching list method.
+
+This is a direct simulation of list operations as specified in the problem.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `N`.
+3. Initialize empty list `lst`.
+4. Repeat `N` times:
+   - Read command line and split into tokens.
+   - Let first token be `op`.
+   - If `op == insert`: parse `i, e` and do `lst.insert(i, e)`.
+   - If `op == print`: print `lst`.
+   - If `op == remove`: parse `e` and do `lst.remove(e)`.
+   - If `op == append`: parse `e` and do `lst.append(e)`.
+   - If `op == sort`: do `lst.sort()`.
+   - If `op == pop`: do `lst.pop()`.
+   - If `op == reverse`: do `lst.reverse()`.
+5. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input N/]
+    B --> C["lst = []"]
+    C --> D["Read next command"]
+    D --> E{More commands left?}
+    E -- No --> Z([End])
+
+    E -- Yes --> F["Split command -> op, args"]
+    F --> G{op type?}
+    G -- insert --> H["lst.insert(i,e)"]
+    G -- print --> I["print(lst)"]
+    G -- remove --> J["lst.remove(e)"]
+    G -- append --> K["lst.append(e)"]
+    G -- sort --> L["lst.sort()"]
+    G -- pop --> M["lst.pop()"]
+    G -- reverse --> N["lst.reverse()"]
+
+    H --> D
+    I --> D
+    J --> D
+    K --> D
+    L --> D
+    M --> D
+    N --> D
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: Depends on command mix; worst-case can reach `O(N^2)` (e.g., repeated inserts/removes near front)
+- Space Complexity: `O(k)` where `k` is current list size
+
