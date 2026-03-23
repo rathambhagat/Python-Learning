@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **13 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **15 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -218,6 +218,8 @@ Phase 2 focuses on solving **13 foundational HackerRank problems** while reinfor
 | 11 | Nested Lists (Second Lowest Grade) | Nested Lists, Min/Second-Min Logic, Sorting |
 | 12 | Finding the Percentage | Dictionaries, List of Floats, Average Calculation, Output Formatting |
 | 13 | List Commands | Command Parsing, List Operations, Data Manipulation |
+| 14 | sWAP cASE | String Case Conversion, Character Handling |
+| 15 | String Split and Join | String Parsing, Delimiter Transformation |
 
 #### Key Learning Points
 
@@ -247,9 +249,11 @@ Phase 2 focuses on solving **13 foundational HackerRank problems** while reinfor
 - ✅ Parsing command-driven input
 - ✅ Applying built-in list methods effectively
 - ✅ Simulating operations in sequence
+- ✅ Case conversion using built-in string methods
+- ✅ Splitting and joining strings with custom delimiters
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 13 problems
+- ✅ Created `Hackerrank(easy).py` with all 15 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -262,7 +266,7 @@ Phase 2 focuses on solving **13 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 13 solved problems)
+│   ├── Hackerrank(easy).py          (all 15 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -276,6 +280,7 @@ Phase-2/
 - Record-processing problems improve confidence with real-world data handling
 - Dictionary-based problems improve data lookup and aggregation skills
 - Command-based problems improve speed with Python list APIs
+- String-manipulation problems strengthen day-to-day text-processing skills
 
 ---
 

@@ -771,3 +771,99 @@ flowchart TD
 - Time Complexity: Depends on command mix; worst-case can reach `O(N^2)` (e.g., repeated inserts/removes near front)
 - Space Complexity: `O(k)` where `k` is current list size
 
+---
+
+# Problem Statement 14: sWAP cASE
+
+## Problem Idea
+Given a string, convert uppercase letters to lowercase and lowercase letters to uppercase.
+
+Example:
+- `Www.HackerRank.com` → `wWW.hACKERrANK.COM`
+
+---
+
+## Explanation
+The function uses Python's built-in string method `swapcase()`:
+- Every lowercase character becomes uppercase.
+- Every uppercase character becomes lowercase.
+- Non-alphabetic characters (digits, spaces, symbols) remain unchanged.
+
+In your implementation, `swapcase()` is called and returned as the output string.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read string `s`.
+3. Apply `swapcase()` to `s`.
+4. Store the transformed string as result.
+5. Print result.
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input string s/]
+    B --> C["result = s.swapcase()"]
+    C --> D["Print result"]
+    D --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is string length
+- Space Complexity: `O(n)` for the new transformed string
+
+---
+
+# Problem Statement 15: String Split and Join
+
+## Problem Idea
+Given a string, split it by spaces and join the words using hyphens (`-`).
+
+Example:
+- `this is a string` → `this-is-a-string`
+
+---
+
+## Explanation
+The function performs two string operations:
+- `split(" ")` to break the sentence into a list of words.
+- `"-".join(...)` to rebuild the sentence using hyphens.
+
+This is a clean way to transform delimiter-separated text.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read string `line`.
+3. Split `line` into words using space delimiter.
+4. Join the words using `-`.
+5. Print the new string.
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input line/]
+    B --> C["words = line.split(' ')"]
+    C --> D["result = '-'.join(words)"]
+    D --> E["Print result"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is length of input string
+- Space Complexity: `O(n)` (list + joined string)
+
