@@ -633,3 +633,60 @@ flowchart TD
 - Time Complexity: `O(n log n)` in worst case (sorting selected names dominates)
 - Space Complexity: `O(n)` (records + names storage)
 
+---
+
+# Problem Statement 12: Finding the Percentage
+
+## Problem Idea
+Store student names with their marks in a dictionary, then print the average marks of a queried student with exactly 2 decimal places.
+
+---
+
+## Explanation
+The program reads `n` student entries. Each entry contains a student name and multiple marks.
+
+- It stores data in a dictionary as: `name -> [marks]`.
+- It reads the `query_name`.
+- It fetches that student's marks list, computes average using:
+    - `sum(marks) / len(marks)`
+- It prints the result formatted to 2 decimal places using `"{:.2f}".format(average)`.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `n`.
+3. Initialize empty dictionary `student_marks`.
+4. Repeat `n` times:
+     - Read one line: `name` followed by scores.
+     - Convert scores to float list.
+     - Store in dictionary: `student_marks[name] = scores`.
+5. Read `query_name`.
+6. Retrieve `marks = student_marks[query_name]`.
+7. Compute `average = sum(marks) / len(marks)`.
+8. Print average with 2 decimal places.
+9. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+        A([Start]) --> B[/Input n/]
+        B --> C["student_marks = {}"]
+        C --> D["Read n entries: name + marks"]
+        D --> E["Store each as name -> list of float marks"]
+        E --> F[/Input query_name/]
+        F --> G["marks = student_marks[query_name]"]
+        G --> H["average = sum(marks)/len(marks)"]
+        H --> I["Print average with 2 decimals"]
+        I --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n + m)` where `n` is number of students and `m` is marks count for queried student
+- Space Complexity: `O(total_marks)` for dictionary storage
+

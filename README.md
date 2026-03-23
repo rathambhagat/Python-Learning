@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **11 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **12 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -216,6 +216,7 @@ Phase 2 focuses on solving **11 foundational HackerRank problems** while reinfor
 | 9 | Alphabet Rangoli | String Patterns, Slicing, Symmetry, Formatting |
 | 10 | Capitalize Full Name | String Split/Join, Word Capitalization |
 | 11 | Nested Lists (Second Lowest Grade) | Nested Lists, Min/Second-Min Logic, Sorting |
+| 12 | Finding the Percentage | Dictionaries, List of Floats, Average Calculation, Output Formatting |
 
 #### Key Learning Points
 
@@ -239,9 +240,12 @@ Phase 2 focuses on solving **11 foundational HackerRank problems** while reinfor
 - ✅ Working with nested lists of records
 - ✅ Finding second minimum values safely
 - ✅ Sorting filtered results for stable output
+- ✅ Storing structured data in dictionaries
+- ✅ Computing averages from dynamic lists
+- ✅ Formatting numeric output to fixed precision
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 11 problems
+- ✅ Created `Hackerrank(easy).py` with all 12 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -254,7 +258,7 @@ Phase 2 focuses on solving **11 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 11 solved problems)
+│   ├── Hackerrank(easy).py          (all 12 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -266,6 +270,7 @@ Phase-2/
 - Input validation prevents bugs before they happen
 - Pattern-printing problems improve command over indexing and formatting
 - Record-processing problems improve confidence with real-world data handling
+- Dictionary-based problems improve data lookup and aggregation skills
 
 ---
 
