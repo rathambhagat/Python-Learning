@@ -867,3 +867,50 @@ flowchart TD
 - Time Complexity: `O(n)` where `n` is length of input string
 - Space Complexity: `O(n)` (list + joined string)
 
+---
+
+# Problem Statement 16: What's Your Name?
+
+## Problem Idea
+Read a person's first name and last name, then print this exact greeting:
+
+`Hello firstname lastname! You just delved into python.`
+
+---
+
+## Explanation
+The function takes two inputs (`first`, `last`) and prints a formatted greeting using an f-string.
+
+- Read `first_name`
+- Read `last_name`
+- Pass both to `print_full_name(first, last)`
+- Print the required sentence exactly
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read `first_name`.
+3. Read `last_name`.
+4. Build greeting text with both names.
+5. Print: `Hello first_name last_name! You just delved into python.`
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input first_name/]
+    B --> C[/Input last_name/]
+    C --> D["Print formatted greeting"]
+    D --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(1)`
+- Space Complexity: `O(1)`
+
