@@ -173,6 +173,7 @@ You are asked to ensure that the first and last names of people begin with a cap
 For example, alison heck should be capitalised correctly as Alison Heck.
 Given a full name, your task is to capitalize the name appropriately.
 """
+import os
 def solve(s):
         words = s.split(" ")
         capitalized_words = [word.capitalize() for word in words]
