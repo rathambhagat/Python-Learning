@@ -33,6 +33,121 @@ flowchart TD
 
 ---
 
+# Problem Statement 18: Find a String
+
+## Problem Idea
+Given a string and a substring, count how many times the substring appears in the string by scanning from left to right (including overlapping matches).
+
+---
+
+## Explanation
+The function checks every possible starting index in the main string and compares the slice of length `len(sub_string)` with the target substring.
+
+- Initialize `count = 0`.
+- Loop from index `0` to `len(string) - len(sub_string)`.
+- If the current slice matches `sub_string`, increment `count`.
+- Return `count`.
+
+This approach naturally counts overlapping occurrences.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read `string` and `sub_string`.
+3. Set `count = 0`.
+4. Compute `sub_len = len(sub_string)`.
+5. For each index `i` from `0` to `len(string) - sub_len`:
+   - If `string[i:i+sub_len] == sub_string`, increment `count`.
+6. Print `count`.
+7. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input string/]
+    B --> C[/Input sub_string/]
+    C --> D["count = 0"]
+    D --> E["i = 0"]
+    E --> F{i <= len(string)-len(sub_string)?}
+    F -- No --> G["Print count"]
+    G --> Z([End])
+    F -- Yes --> H{string[i:i+sub_len] == sub_string?}
+    H -- Yes --> I["count = count + 1"]
+    H -- No --> J["i = i + 1"]
+    I --> J
+    J --> F
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n * m)` in worst case (`n` = length of string, `m` = length of substring)
+- Space Complexity: `O(1)` (excluding input storage)
+
+---
+
+# Problem Statement 19: String Validators
+
+## Problem Idea
+Given a string `S`, print whether it contains:
+1. any alphanumeric characters
+2. any alphabetical characters
+3. any digits
+4. any lowercase characters
+5. any uppercase characters
+
+---
+
+## Explanation
+The solution uses Python built-in checks with `any()` over each character:
+
+- `isalnum()` for alphanumeric
+- `isalpha()` for alphabetic
+- `isdigit()` for digits
+- `islower()` for lowercase
+- `isupper()` for uppercase
+
+Each result is printed as `True` or `False` on separate lines.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read input string `s`.
+3. Check and print `any(c.isalnum() for c in s)`.
+4. Check and print `any(c.isalpha() for c in s)`.
+5. Check and print `any(c.isdigit() for c in s)`.
+6. Check and print `any(c.islower() for c in s)`.
+7. Check and print `any(c.isupper() for c in s)`.
+8. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input s/]
+    B --> C["Print any isalnum"]
+    C --> D["Print any isalpha"]
+    D --> E["Print any isdigit"]
+    E --> F["Print any islower"]
+    F --> G["Print any isupper"]
+    G --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` for each check; overall `O(n)` with constant-factor multiple passes
+- Space Complexity: `O(1)` (generator expressions)
+
+---
+
 # Problem Statement 17: Mutations
 
 ## Problem Idea

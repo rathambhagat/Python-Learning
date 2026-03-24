@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **17 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **19 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -222,6 +222,8 @@ Phase 2 focuses on solving **17 foundational HackerRank problems** while reinfor
 | 15 | String Split and Join | String Parsing, Delimiter Transformation |
 | 16 | What's Your Name? | Function Arguments, String Formatting, Output Template |
 | 17 | Mutations | String Immutability, List Conversion, Index-Based Update |
+| 18 | Find a String | Sliding Slice Comparison, Overlapping Match Counting |
+| 19 | String Validators | Character Classification, any(), Boolean Checks |
 
 #### Key Learning Points
 
@@ -256,9 +258,11 @@ Phase 2 focuses on solving **17 foundational HackerRank problems** while reinfor
 - ✅ Building formatted output from multiple inputs
 - ✅ Handling string immutability with list conversion
 - ✅ Updating characters by index safely
+- ✅ Counting overlapping substring occurrences
+- ✅ Using character validators for input analysis
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 17 problems
+- ✅ Created `Hackerrank(easy).py` with all 19 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -271,7 +275,7 @@ Phase 2 focuses on solving **17 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 17 solved problems)
+│   ├── Hackerrank(easy).py          (all 19 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -288,6 +292,7 @@ Phase-2/
 - String-manipulation problems strengthen day-to-day text-processing skills
 - Greeting-format problems reinforce clean function design and output precision
 - Mutation problems improve understanding of immutable vs mutable data types
+- Validator and substring problems improve practical string-analysis skills
 
 ---
 
