@@ -33,6 +33,58 @@ flowchart TD
 
 ---
 
+# Problem Statement 17: Mutations
+
+## Problem Idea
+Given a string, change the character at a specific index and print the updated string.
+
+---
+
+## Explanation
+Python strings are immutable, so direct character replacement is not allowed.
+
+Your function handles this by:
+- Converting the string into a list of characters.
+- Replacing the element at the target index.
+- Joining the list back into a string.
+
+This is a standard and clean way to mutate one character in a string.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read input string `s`.
+3. Read `position` and `character`.
+4. Convert `s` to list `lst`.
+5. Set `lst[position] = character`.
+6. Join `lst` into `updated_string`.
+7. Print `updated_string`.
+8. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input string s/]
+    B --> C[/Input position and character/]
+    C --> D["lst = list(s)"]
+    D --> E["lst[position] = character"]
+    E --> F["updated = ''.join(lst)"]
+    F --> G["Print updated"]
+    G --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is length of string
+- Space Complexity: `O(n)` (character list and rebuilt string)
+
+---
+
 # Problem Statement 2
 # Weird or Not Weird - Explanation and Algorithm
 

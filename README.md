@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **16 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **17 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -221,6 +221,7 @@ Phase 2 focuses on solving **16 foundational HackerRank problems** while reinfor
 | 14 | sWAP cASE | String Case Conversion, Character Handling |
 | 15 | String Split and Join | String Parsing, Delimiter Transformation |
 | 16 | What's Your Name? | Function Arguments, String Formatting, Output Template |
+| 17 | Mutations | String Immutability, List Conversion, Index-Based Update |
 
 #### Key Learning Points
 
@@ -253,9 +254,11 @@ Phase 2 focuses on solving **16 foundational HackerRank problems** while reinfor
 - ✅ Case conversion using built-in string methods
 - ✅ Splitting and joining strings with custom delimiters
 - ✅ Building formatted output from multiple inputs
+- ✅ Handling string immutability with list conversion
+- ✅ Updating characters by index safely
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 16 problems
+- ✅ Created `Hackerrank(easy).py` with all 17 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -268,7 +271,7 @@ Phase 2 focuses on solving **16 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 16 solved problems)
+│   ├── Hackerrank(easy).py          (all 17 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -284,6 +287,7 @@ Phase-2/
 - Command-based problems improve speed with Python list APIs
 - String-manipulation problems strengthen day-to-day text-processing skills
 - Greeting-format problems reinforce clean function design and output precision
+- Mutation problems improve understanding of immutable vs mutable data types
 
 ---
 
