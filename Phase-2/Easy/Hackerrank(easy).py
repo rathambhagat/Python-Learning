@@ -385,3 +385,17 @@ if __name__ == '__main__':
     print(any(c.isdigit() for c in s))
     print(any(c.islower() for c in s))
     print(any(c.isupper() for c in s))
+
+# Problem Statement 20
+"""
+Complete the average function
+"""
+def average(array):
+    distinct = set(array)
+    avg = sum(distinct)/len(distinct)
+    return avg
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
