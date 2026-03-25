@@ -414,4 +414,29 @@ for i in range(n):
     Stamps.add(input())
 print(len(Stamps))
     
+# Problem Statement 22
+"""
+Task
+You have a non-empty set s, and you have to execute N commands given in N lines.
+The commands will be pop, remove and discard.
+Input Format
+The first line contains integer n, the number of elements in the set s.
+The second line contains n space separated elements of set s. All of the elements are non-negative integers, less than or equal to 9.
+The third line contains integer N, the number of commands.
+The next V lines contains either pop, remove and/or discard commands followed by their associated value.
+"""
+if __name__ == '__main__':
+    n = int(input())                          # number of elements in the set
+    s = set(map(int, input().split()))        # read the set
+    N = int(input())                          # number of commands
+    for _ in range(N):
+        command = input().split()
+        if command[0] == 'pop':
+            s.pop()                           # removes an arbitrary element
+        elif command[0] == 'remove':
+            s.remove(int(command[1]))         # removes the specified element; raises error if not present
+        elif command[0] == 'discard':
+            s.discard(int(command[1]))        # removes if present, does nothing otherwise
+    print(sum(s))                             # output the sum of the remaining elements
+
 
