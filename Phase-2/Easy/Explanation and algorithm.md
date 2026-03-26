@@ -33,6 +33,176 @@ flowchart TD
 
 ---
 
+# Problem Statement 28: Polar Coordinates
+
+## Problem Idea
+Given a complex number `z`, print:
+1. Its modulus `r`
+2. Its phase angle `phi`
+
+---
+
+## Explanation
+The solution uses `cmath.polar(z)` which returns a tuple `(r, phi)`:
+- `r` is distance from origin
+- `phi` is angle in radians
+
+---
+
+## Step-by-Step Algorithm
+1. Read complex number `z`.
+2. Use `cmath.polar(z)` to get `r` and `phi`.
+3. Print `r`.
+4. Print `phi`.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input complex z/]
+    B --> C["r, phi = cmath.polar(z)"]
+    C --> D["Print r"]
+    D --> E["Print phi"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(1)`
+- Space Complexity: `O(1)`
+
+---
+
+# Problem Statement 29: Divmod
+
+## Problem Idea
+Given integers `a` and `b`, print:
+1. Integer division `a // b`
+2. Modulo `a % b`
+3. `divmod(a, b)` tuple
+
+---
+
+## Explanation
+`divmod(a, b)` returns `(a // b, a % b)` in one call.
+The program prints quotient, remainder, then full tuple.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `a` and `b`.
+2. Compute `res = divmod(a, b)`.
+3. Print `res[0]`.
+4. Print `res[1]`.
+5. Print `res`.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input a/]
+    B --> C[/Input b/]
+    C --> D["res = divmod(a,b)"]
+    D --> E["Print res[0]"]
+    E --> F["Print res[1]"]
+    F --> G["Print res"]
+    G --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(1)`
+- Space Complexity: `O(1)`
+
+---
+
+# Problem Statement 30: Power - Mod Power
+
+## Problem Idea
+Given integers `a`, `b`, and `m`, print:
+1. `pow(a, b)`
+2. `pow(a, b, m)`
+
+---
+
+## Explanation
+The first expression computes standard exponentiation. The second computes modular exponentiation efficiently.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `a`, `b`, and `m`.
+2. Print `pow(a, b)`.
+3. Print `pow(a, b, m)`.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input a/]
+    B --> C[/Input b/]
+    C --> D[/Input m/]
+    D --> E["Print pow(a,b)"]
+    E --> F["Print pow(a,b,m)"]
+    F --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(log b)` for modular power (efficient exponentiation)
+- Space Complexity: `O(1)`
+
+---
+
+# Problem Statement 31: Integers Come in All Sizes
+
+## Problem Idea
+Read `a`, `b`, `c`, `d` and print the value of `a^b + c^d`.
+
+---
+
+## Explanation
+Python supports arbitrarily large integers, so very large exponent results are handled directly.
+
+---
+
+## Step-by-Step Algorithm
+1. Read integers `a`, `b`, `c`, `d`.
+2. Compute `a**b + c**d`.
+3. Print the result.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input a/]
+    B --> C[/Input b/]
+    C --> D[/Input c/]
+    D --> E[/Input d/]
+    E --> F["result = a**b + c**d"]
+    F --> G["Print result"]
+    G --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: Depends on exponent sizes (`b`, `d`) and big-integer arithmetic
+- Space Complexity: Depends on size of resulting big integers
+
+---
+
 # Problem Statement 20: Introduction to Sets (Average)
 
 ## Problem Idea

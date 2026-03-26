@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **27 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **31 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -233,6 +233,10 @@ Phase 2 focuses on solving **27 foundational HackerRank problems** while reinfor
 | 25 (Second) | Set Symmetric Difference | Exclusive Union, Non-overlap Counting |
 | 26 | Symmetric Difference (Sorted) | Set Difference Logic, Sorting Output |
 | 27 | Set Mutations | In-place Set Operations, Batch Updates |
+| 28 | Polar Coordinates | Complex Numbers, cmath, Geometric Representation |
+| 29 | Divmod | Integer Division, Modulo, Tuple Output |
+| 30 | Power - Mod Power | Exponentiation, Modular Arithmetic, pow() |
+| 31 | Integers Come in All Sizes | Big Integers, Exponent Math |
 
 #### Key Learning Points
 
@@ -273,9 +277,13 @@ Phase 2 focuses on solving **27 foundational HackerRank problems** while reinfor
 - ✅ Solving set-based union/intersection/difference variants
 - ✅ Applying multiple in-place set mutations
 - ✅ Producing sorted outputs from set operations
+- ✅ Converting complex numbers to polar form
+- ✅ Using divmod for quotient-remainder pairs
+- ✅ Using modular exponentiation efficiently
+- ✅ Handling very large integer computations in Python
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 27 problems
+- ✅ Created `Hackerrank(easy).py` with all 31 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -289,6 +297,7 @@ Phase 2 focuses on solving **27 foundational HackerRank problems** while reinfor
 Phase-2/
 ├── Easy/
 │   ├── Hackerrank(easy).py          (all 27 solved problems)
+│   ├── Hackerrank(easy).py          (all 31 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -307,6 +316,7 @@ Phase-2/
 - Mutation problems improve understanding of immutable vs mutable data types
 - Validator and substring problems improve practical string-analysis skills
 - Set-heavy problems strengthened collection operations and mathematical set logic
+- Math-heavy problems reinforced confidence with Python's numeric power and big integer support
 
 ---
 
