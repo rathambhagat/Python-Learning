@@ -33,6 +33,365 @@ flowchart TD
 
 ---
 
+# Problem Statement 20: Introduction to Sets (Average)
+
+## Problem Idea
+Given an array, compute the average of distinct values only.
+
+---
+
+## Explanation
+The function converts the input list to a set to remove duplicates, then computes:
+- `sum(distinct) / len(distinct)`
+
+---
+
+## Step-by-Step Algorithm
+1. Read list `array`.
+2. Convert to set `distinct`.
+3. Compute average using sum and length.
+4. Print result.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input array/]
+    B --> C["distinct = set(array)"]
+    C --> D["avg = sum(distinct)/len(distinct)"]
+    D --> E["Print avg"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)`
+- Space Complexity: `O(n)`
+
+---
+
+# Problem Statement 21: No Idea! (Distinct Country Stamps)
+
+## Problem Idea
+Count how many distinct country names exist in `N` stamp entries.
+
+---
+
+## Explanation
+The solution stores country names in a set; duplicates are automatically ignored. Final answer is `len(set)`.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `n`.
+2. Initialize empty set `stamps`.
+3. Add each input country to set.
+4. Print size of set.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input n/]
+    B --> C["stamps = set()"]
+    C --> D["Read n country names and add"]
+    D --> E["Print len(stamps)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)`
+- Space Complexity: `O(n)`
+
+---
+
+# Problem Statement 22: Set .discard(), .remove() & .pop()
+
+## Problem Idea
+Perform `N` set operations (`pop`, `remove x`, `discard x`) on set `s`, then print sum of remaining elements.
+
+---
+
+## Explanation
+For each command:
+- `pop` removes an arbitrary element.
+- `remove x` removes x (error if absent).
+- `discard x` removes x if present.
+
+After all operations, print `sum(s)`.
+
+---
+
+## Step-by-Step Algorithm
+1. Read set `s`.
+2. Read number of commands `N`.
+3. Execute each command based on operation type.
+4. Print sum of final set.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input set s/]
+    B --> C[/Input N commands/]
+    C --> D["Apply pop/remove/discard"]
+    D --> E["Print sum(s)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(N)` average
+- Space Complexity: `O(n)`
+
+---
+
+# Problem Statement 23: Set Union Operation
+
+## Problem Idea
+Given English and French subscriber sets, print count of students subscribed to at least one newspaper.
+
+---
+
+## Explanation
+Use `english.union(french)`, then print its length.
+
+---
+
+## Step-by-Step Algorithm
+1. Read both sets.
+2. Compute union.
+3. Print union size.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input english set/]
+    B --> C[/Input french set/]
+    C --> D["u = english ∪ french"]
+    D --> E["Print len(u)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n + m)`
+- Space Complexity: `O(n + m)`
+
+---
+
+# Problem Statement 24: Set Intersection Operation
+
+## Problem Idea
+Print number of students subscribed to both newspapers.
+
+---
+
+## Explanation
+Compute `english.intersection(french)` and print its length.
+
+---
+
+## Step-by-Step Algorithm
+1. Read both sets.
+2. Compute intersection.
+3. Print intersection size.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input english set/]
+    B --> C[/Input french set/]
+    C --> D["i = english ∩ french"]
+    D --> E["Print len(i)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(min(n,m))`
+- Space Complexity: `O(min(n,m))`
+
+---
+
+# Problem Statement 25: Set Difference Operation
+
+## Problem Idea
+Print number of students subscribed to English only.
+
+---
+
+## Explanation
+Use `english.difference(french)` and print its size.
+
+---
+
+## Step-by-Step Algorithm
+1. Read both sets.
+2. Compute `english - french`.
+3. Print size.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input english set/]
+    B --> C[/Input french set/]
+    C --> D["d = english - french"]
+    D --> E["Print len(d)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` average
+- Space Complexity: `O(n)`
+
+---
+
+# Problem Statement 25 (Second): Set Symmetric Difference Operation
+
+## Problem Idea
+Print number of students subscribed to exactly one newspaper (not both).
+
+---
+
+## Explanation
+Use `english.symmetric_difference(french)` and print its size.
+
+---
+
+## Step-by-Step Algorithm
+1. Read both sets.
+2. Compute symmetric difference.
+3. Print its size.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input english set/]
+    B --> C[/Input french set/]
+    C --> D["sd = english Δ french"]
+    D --> E["Print len(sd)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n + m)`
+- Space Complexity: `O(n + m)`
+
+---
+
+# Problem Statement 26: Symmetric Difference (Sorted Output)
+
+## Problem Idea
+Given sets `M` and `N`, print symmetric difference elements in ascending order, one per line.
+
+---
+
+## Explanation
+Compute `N.symmetric_difference(M)`, sort the result, print each value line-by-line.
+
+---
+
+## Step-by-Step Algorithm
+1. Read two sets.
+2. Compute symmetric difference.
+3. Sort values.
+4. Print each value.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input set N/]
+    B --> C[/Input set M/]
+    C --> D["sd = N Δ M"]
+    D --> E["Sort sd"]
+    E --> F["Print each value"]
+    F --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O((n+m) log(n+m))`
+- Space Complexity: `O(n+m)`
+
+---
+
+# Problem Statement 27: Set Mutations
+
+## Problem Idea
+Apply multiple set mutation operations (`update`, `intersection_update`, `difference_update`, `symmetric_difference_update`) on set `A`, then print sum of final elements.
+
+---
+
+## Explanation
+For each operation line, read operation name and another set, then apply corresponding in-place mutation to `A`.
+After all operations, print `sum(A)`.
+
+---
+
+## Step-by-Step Algorithm
+1. Read initial set `A`.
+2. Read number of operations `N`.
+3. Repeat `N` times:
+   - Read operation name.
+   - Read `other_set`.
+   - Apply matching mutation to `A`.
+4. Print `sum(A)`.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input set A/]
+    B --> C[/Input N operations/]
+    C --> D["For each: read op + other_set"]
+    D --> E["Apply mutation on A"]
+    E --> F["Print sum(A)"]
+    F --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(total elements processed across operations)`
+- Space Complexity: `O(|A| + |other_set|)`
+
+---
+
 # Problem Statement 18: Find a String
 
 ## Problem Idea

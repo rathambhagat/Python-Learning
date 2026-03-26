@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **19 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **27 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -224,6 +224,15 @@ Phase 2 focuses on solving **19 foundational HackerRank problems** while reinfor
 | 17 | Mutations | String Immutability, List Conversion, Index-Based Update |
 | 18 | Find a String | Sliding Slice Comparison, Overlapping Match Counting |
 | 19 | String Validators | Character Classification, any(), Boolean Checks |
+| 20 | Introduction to Sets (Average) | Distinct Values, Set Conversion, Mean Calculation |
+| 21 | Distinct Country Stamps | Set Uniqueness, Counting Unique Entries |
+| 22 | Set .discard() .remove() .pop() | Command Handling, Set Mutation, Aggregation |
+| 23 | Set Union | Set Union, Membership Combination |
+| 24 | Set Intersection | Common Elements, Set Intersection |
+| 25 | Set Difference | Exclusive Elements, Set Difference |
+| 25 (Second) | Set Symmetric Difference | Exclusive Union, Non-overlap Counting |
+| 26 | Symmetric Difference (Sorted) | Set Difference Logic, Sorting Output |
+| 27 | Set Mutations | In-place Set Operations, Batch Updates |
 
 #### Key Learning Points
 
@@ -260,9 +269,13 @@ Phase 2 focuses on solving **19 foundational HackerRank problems** while reinfor
 - ✅ Updating characters by index safely
 - ✅ Counting overlapping substring occurrences
 - ✅ Using character validators for input analysis
+- ✅ Removing duplicates using sets
+- ✅ Solving set-based union/intersection/difference variants
+- ✅ Applying multiple in-place set mutations
+- ✅ Producing sorted outputs from set operations
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 19 problems
+- ✅ Created `Hackerrank(easy).py` with all 27 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -275,7 +288,7 @@ Phase 2 focuses on solving **19 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 19 solved problems)
+│   ├── Hackerrank(easy).py          (all 27 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -293,6 +306,7 @@ Phase-2/
 - Greeting-format problems reinforce clean function design and output precision
 - Mutation problems improve understanding of immutable vs mutable data types
 - Validator and substring problems improve practical string-analysis skills
+- Set-heavy problems strengthened collection operations and mathematical set logic
 
 ---
 
