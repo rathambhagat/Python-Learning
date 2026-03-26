@@ -511,3 +511,27 @@ english = set(map(int,input().split()))
 b = int(input())
 french = set(map(int,input().split()))
 print(len(english.symmetric_difference(french)))
+# Problem Statement 26
+"""
+Task
+Given 2 sets of integers, M and N, print their symmetric difference in ascending order.
+The term symmetric difference indicates those values that exist in either M or N but do not exist in both.
+Input Format
+The first line of input contains an integer, M.
+The second line contains M space-separated integers.
+The third line contains an integer, N.
+The fourth line contains N space-separated integers.
+Output Format
+Output the symmetric difference integers in ascending order, one per line.
+"""
+n = int(input())
+N = set(map(int, input().split()))
+m = int(input())
+M = set(map(int, input().split()))
+
+# Symmetric difference: (N | M) - (N & M)
+symmetric_diff = N.symmetric_difference(M)
+
+# Print each element in ascending order, one per line
+for value in sorted(symmetric_diff):
+    print(value)
