@@ -636,3 +636,26 @@ b = int(input())
 m = int(input())
 print(pow(a,b))
 print(pow(a,b,m))
+
+# Problem Statement 31
+"""
+Integers in Python can be as big as the bytes in your machine's memory. There is no limit in size as there is: 231-1 (c++ int) or 263 1 (C++ long long int).
+b As we know, the result of a grows really fast with increasing b.
+Let's do some calculations on very large integers.
+Task
+Read four numbers, a, b, c, and d, and print the result of ab + c².
+Input Format
+Integers a, b, c, and d are given on four separate lines, respectively.
+Constraints
+1 ≤ a ≤ 1000
+1 < b < 1000
+1 ≤ c ≤ 1000
+1 ≤ d ≤ 1000
+Output Format
+Print the result of ab + cd on one line.
+"""
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print(a**b + c**d)
