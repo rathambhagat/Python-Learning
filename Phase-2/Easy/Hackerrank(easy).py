@@ -586,5 +586,40 @@ if __name__ == '__main__':
 
 # Problem Statement 28
 """
-
+Task
+You are given a complex z. Your task is to convert it to polar coordinates.
+Input Format
+A single line containing the complex number z. Note: complex() function can be used in
+python to convert the input as a complex number.
+Constraints
+Given number is a valid complex number
+Output Format
+Output two lines:
+The first line should contain the value of r.
+The second line should contain the value of .
 """
+import cmath
+z = complex(input())
+r, phi = cmath.polar(z)
+print(r)
+print(phi)
+
+# Problem Statement 29
+"""
+Task
+Read in two integers, a and b, and print three lines.
+The first line is the integer division a//b (While using Python2 remember to import
+division from __future__).
+The second line is the result of the modulo operator: a%b.
+The third line prints the divmod of a and b.
+Input Format
+The first line contains the first integer, a, and the second line contains the second integer, b.
+Output Format
+Print the result as described above.
+"""
+a = int(input())
+b = int(input())
+res = divmod(a,b)
+print(res[0])
+print(res[1])
+print(res)
