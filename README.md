@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **31 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **34 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -237,6 +237,9 @@ Phase 2 focuses on solving **31 foundational HackerRank problems** while reinfor
 | 29 | Divmod | Integer Division, Modulo, Tuple Output |
 | 30 | Power - Mod Power | Exponentiation, Modular Arithmetic, pow() |
 | 31 | Integers Come in All Sizes | Big Integers, Exponent Math |
+| 32 | collections.Counter() | Frequency Counting, Inventory Simulation |
+| 33 | Word Positions Mapping | Hash Maps, Index Tracking, Query Lookup |
+| 34 | Student Averages (Zipped-style) | Matrix-like Input Handling, Aggregation, Formatting |
 
 #### Key Learning Points
 
@@ -281,9 +284,12 @@ Phase 2 focuses on solving **31 foundational HackerRank problems** while reinfor
 - ✅ Using divmod for quotient-remainder pairs
 - ✅ Using modular exponentiation efficiently
 - ✅ Handling very large integer computations in Python
+- ✅ Managing stock with frequency counters
+- ✅ Mapping repeated words to occurrence positions
+- ✅ Computing row/column style averages from tabular input
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 31 problems
+- ✅ Created `Hackerrank(easy).py` with all 34 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -296,8 +302,8 @@ Phase 2 focuses on solving **31 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 27 solved problems)
 │   ├── Hackerrank(easy).py          (all 31 solved problems)
+│   ├── Hackerrank(easy).py          (all 34 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -317,6 +323,7 @@ Phase-2/
 - Validator and substring problems improve practical string-analysis skills
 - Set-heavy problems strengthened collection operations and mathematical set logic
 - Math-heavy problems reinforced confidence with Python's numeric power and big integer support
+- Counter and mapping problems improved data-structure thinking for real interview-style inputs
 
 ---
 
