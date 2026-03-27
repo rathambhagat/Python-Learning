@@ -746,3 +746,36 @@ for _ in range(m):
         print(" ".join(positions[word]))
     else:
         print(-1)
+
+# Problem Statement 34
+"""
+Task
+The National University conducts an examination of N students in X subjects.
+Your task is to compute the average scores of each student.
+Average score Sum of scores obtained in all subjects by a student Total number of subjects
+Input Format
+The first line contains N and X separated by a space.
+The next X lines contains the space separated marks obtained by students in a particular subject.
+Constraints
+0 < N < 100
+0 < X < 100
+Output Format
+Print the averages of all students on separate lines.
+The averages must be correct up to 1 decimal place.
+"""
+# Read number of students and subjects
+N, X = map(int, input().split())
+
+# Create a list to store marks per student (initialize with zeros)
+student_marks = [0] * N
+
+# Read marks for each subject
+for _ in range(X):
+    marks = list(map(float, input().split()))
+    for i in range(N):
+        student_marks[i] += marks[i]
+
+# Compute averages and print each with one decimal place
+for total in student_marks:
+    average = total / X
+    print(f"{average:.1f}")
