@@ -302,7 +302,6 @@ Phase 2 focuses on solving **34 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 31 solved problems)
 │   ├── Hackerrank(easy).py          (all 34 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
