@@ -660,3 +660,45 @@ c = int(input())
 d = int(input())
 print(a**b + c**d)
 
+# Problem Statement 32
+"""
+Task
+Raghu is a shoe shop owner. His shop has X number of shoes.
+He has a list containing the size of each shoe he has in his shop.
+There are N number of customers who are willing to pay x; amount of money only if they get the shoe of their desired size.
+Your task is to compute how much money Raghu earned.
+Input Format
+The first line contains X, the number of shoes.
+The second line contains the space separated list of all the shoe sizes in the shop.
+The third line contains N, the number of customers.
+The next N lines contain the space separated values of the shoe size desired by the customer and 2, the price of the shoe.
+Constraints
+0 < X < 103
+0 < N < 103
+20 < x < 100
+2 < shoe size < 20
+Output Format
+Print the amount of money earned by Raghu.
+"""
+from collections import Counter
+
+if __name__ == '__main__':
+    # Read number of shoes
+    X = int(input().strip())
+    # Read shoe sizes
+    shoe_sizes = list(map(int, input().strip().split()))
+    # Count available shoes per size
+    stock = Counter(shoe_sizes)
+    
+    # Read number of customers
+    N = int(input().strip())
+    total_earned = 0
+    
+    # Process each customer
+    for _ in range(N):
+        size, price = map(int, input().strip().split())
+        if stock[size] > 0:
+            total_earned += price
+            stock[size] -= 1
+    
+    print(total_earned)
