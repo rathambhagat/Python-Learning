@@ -33,6 +33,152 @@ flowchart TD
 
 ---
 
+# Problem Statement 32: collections.Counter() (Shoe Shop)
+
+## Problem Idea
+Given available shoe sizes and customer requests `(size, price)`, sell a shoe only if size is in stock and compute total earnings.
+
+---
+
+## Explanation
+The solution uses `Counter` to track quantity of each shoe size.
+
+- For each customer, check if `stock[size] > 0`.
+- If available, add `price` to total and decrement stock.
+- Print total earned amount.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `X` and shoe sizes list.
+2. Create `stock = Counter(shoe_sizes)`.
+3. Read number of customers `N`.
+4. For each customer request `(size, price)`:
+   - If stock exists, sell and update total.
+5. Print total earnings.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input shoe sizes/]
+    B --> C["stock = Counter(sizes)"]
+    C --> D[/Input N customers/]
+    D --> E["For each request: size, price"]
+    E --> F{stock[size] > 0?}
+    F -- Yes --> G["total += price; stock[size] -= 1"]
+    F -- No --> H["Skip sale"]
+    G --> I{More customers?}
+    H --> I
+    I -- Yes --> E
+    I -- No --> J["Print total"]
+    J --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(X + N)`
+- Space Complexity: `O(X)`
+
+---
+
+# Problem Statement 33: DefaultDict Tutorial (Word Positions)
+
+## Problem Idea
+Store 1-indexed positions of words in Group A and, for each word in Group B, print all positions or `-1` if absent.
+
+---
+
+## Explanation
+The solution builds a dictionary mapping each word to a list of occurrence indices from Group A.
+Then each Group B query checks dictionary presence:
+
+- If present: print joined positions.
+- Else: print `-1`.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `n` and `m`.
+2. For `i` in `1..n`, store positions of Group A words.
+3. For each of `m` words in Group B:
+   - Print indices if found.
+   - Otherwise print `-1`.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input n and m/]
+    B --> C["positions = {}"]
+    C --> D["Read n words of Group A and store indices"]
+    D --> E["Read each Group B word"]
+    E --> F{word in positions?}
+    F -- Yes --> G["Print indices joined by space"]
+    F -- No --> H["Print -1"]
+    G --> I{More queries?}
+    H --> I
+    I -- Yes --> E
+    I -- No --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n + m + total_matches)`
+- Space Complexity: `O(n)`
+
+---
+
+# Problem Statement 34: Zipped! (Student Averages)
+
+## Problem Idea
+Given marks for `N` students across `X` subjects, compute and print each student's average.
+
+---
+
+## Explanation
+The program accumulates each student's total marks subject-by-subject, then divides each total by `X`.
+Output is printed with one decimal place.
+
+---
+
+## Step-by-Step Algorithm
+1. Read `N` (students) and `X` (subjects).
+2. Initialize `student_marks` totals with zeros.
+3. Repeat for each subject:
+   - Read marks of all `N` students.
+   - Add each mark to corresponding student's total.
+4. For each student total, compute `average = total / X`.
+5. Print average with one decimal.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input N and X/]
+    B --> C["student_totals = [0]*N"]
+    C --> D["Read each subject marks and accumulate"]
+    D --> E["For each student: avg = total/X"]
+    E --> F["Print avg (1 decimal)"]
+    F --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(N * X)`
+- Space Complexity: `O(N)`
+
+---
+
 # Problem Statement 28: Polar Coordinates
 
 ## Problem Idea
