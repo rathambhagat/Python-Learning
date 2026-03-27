@@ -702,3 +702,47 @@ if __name__ == '__main__':
             stock[size] -= 1
     
     print(total_earned)
+
+# Problem Statement 33
+"""
+In this challenge, you will be given 2 integers, n and m. There are n words, which might repeat, in word group A.
+There are m words belonging to word group B. For each m words, check whether the word has appeared in group A or not. Print the indices of each occurrence of m in group A. If it does not appear, print -1.
+Example
+Group A contains 'a', 'b', 'a' Group B contains 'a', 'c'
+For the first word in group B, 'a', it appears at positions 1 and 3 in group A. The second word, 'c', does not appear in group A, so print -1.
+Expected output:
+13
+-1
+Input Format
+The first line contains integers, n and m separated by a space.
+The next n. lines contains the words belonging to group A.
+The next m lines contains the words belonging to group B.
+Constraints
+1 ≤ n ≤10000
+1 ≤ m ≤ 100
+1 length of each word in the input < 100
+Output Format
+Output m lines.
+The ith line should contain the 1-indexed positions of the occurrences of the ith word separated by spaces.
+"""
+# Read the first line containing n and m
+n, m = map(int, input().split())
+
+# Create a dictionary to store positions for each word in group A
+positions = {}
+
+# Read the next n lines for group A
+for i in range(1, n + 1):          # i starts at 1 for 1-indexed positions
+    word = input().strip()         # read the word, strip any extra whitespace
+    if word not in positions:
+        positions[word] = []       # initialize an empty list for new word
+    positions[word].append(str(i)) # store the index as a string for later joining
+
+# Process the m words of group B
+for _ in range(m):
+    word = input().strip()         # read a word from group B
+    if word in positions:
+        # Print the indices separated by spaces
+        print(" ".join(positions[word]))
+    else:
+        print(-1)
