@@ -796,3 +796,34 @@ weekday = calendar.weekday(Y,M,D)
 
 # Get the day name in uppercase
 print(calendar.day_name[weekday].upper())
+
+# Problem Statement 36
+"""
+Task
+You are given a polynomial P of a single indeterminate (or variable), x.
+You are also given the values of z and k. Your task is to verify if P(x) = k.
+Constraints
+All coefficients of polynomial P are integers.
+x and y are also integers.
+Input Format
+The first line contains the space separated values of x and k.
+The second line contains the polynomial P.
+Output Format
+Print True if P(x) = k. Otherwise, print False.
+"""
+# Read x and k
+x, k = map(int, input().split())
+
+# Read the polynomial expression
+expr = input()
+
+# Evaluate the expression with x replaced by its value
+result = eval(expr, {"x": x})
+
+# Print True if result equals k, otherwise False
+print(result == k)
+
+# Problem Statement 37
+"""
+
+"""
