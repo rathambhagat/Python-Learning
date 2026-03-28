@@ -782,5 +782,17 @@ for total in student_marks:
 
 # Problem Statement 35
 """
-
+Task
+You are given a date. Your task is to find what the day is on that date.
+Input Format
+A single line of input containing the space separated month, day and year, respectively, in  MM DD YYYY format.
+Output Format
+Output the correct day in capital letters.
 """
+import calendar
+M, D, Y = map(int,input().split())
+# Get the weekday (0 = Monday, 6 = Sunday)
+weekday = calendar.weekday(Y,M,D)
+
+# Get the day name in uppercase
+print(calendar.day_name[weekday].upper())
