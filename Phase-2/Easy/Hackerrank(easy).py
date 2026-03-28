@@ -779,3 +779,8 @@ for _ in range(X):
 for total in student_marks:
     average = total / X
     print(f"{average:.1f}")
+
+# Problem Statement 35
+"""
+
+"""
