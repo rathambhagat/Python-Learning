@@ -33,6 +33,151 @@ flowchart TD
 
 ---
 
+# Problem Statement 35: Calendar Module (Find Day)
+
+## Problem Idea
+Given a date in `MM DD YYYY` format, print the day of the week in uppercase.
+
+---
+
+## Explanation
+The solution uses Python's `calendar` module:
+- `calendar.weekday(year, month, day)` returns an index from `0` (Monday) to `6` (Sunday).
+- `calendar.day_name[index]` gives the day name.
+- `.upper()` converts it to the required format.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read `M`, `D`, `Y`.
+3. Compute `weekday = calendar.weekday(Y, M, D)`.
+4. Fetch day string using `calendar.day_name[weekday]`.
+5. Convert to uppercase and print.
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input M, D, Y/]
+    B --> C["idx = calendar.weekday(Y, M, D)"]
+    C --> D["day = calendar.day_name[idx]"]
+    D --> E["Print day.upper()"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(1)`
+- Space Complexity: `O(1)`
+
+---
+
+# Problem Statement 36: Polynomials
+
+## Problem Idea
+Given values `x` and `k`, and a polynomial expression `P`, verify whether `P(x) == k`.
+
+---
+
+## Explanation
+The program reads `x` and `k`, then evaluates the polynomial expression using `eval` with `x` bound in a controlled context. It compares the result with `k` and prints `True` or `False`.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integers `x` and `k`.
+3. Read polynomial expression string `expr`.
+4. Evaluate expression with `x` value.
+5. Compare evaluated result with `k`.
+6. Print comparison result (`True`/`False`).
+7. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input x and k/]
+    B --> C[/Input polynomial expr/]
+    C --> D["result = eval(expr, {'x': x})"]
+    D --> E{"result == k?"}
+    E -- Yes --> F["Print True"]
+    E -- No --> G["Print False"]
+    F --> Z([End])
+    G --> Z
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is length/complexity of the expression
+- Space Complexity: `O(1)` auxiliary (excluding expression storage)
+
+---
+
+# Problem Statement 37: Exceptions
+
+## Problem Idea
+For each test case, perform integer division `a // b`. If input is invalid or division by zero occurs, print the corresponding error code.
+
+---
+
+## Explanation
+Each test case is wrapped in a `try-except` block:
+- Parse two integers from input.
+- Print integer division result.
+- Catch `ZeroDivisionError` for division by zero.
+- Catch `ValueError` for malformed integers.
+
+The program prints errors in HackerRank-required format: `Error Code: <message>`.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `T`.
+3. Repeat `T` times:
+   - Read one input line.
+   - Try to parse `a`, `b` as integers.
+   - Try printing `a // b`.
+   - If `ZeroDivisionError`, print error code.
+   - If `ValueError`, print error code.
+4. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input T/]
+    B --> C["Read next test case"]
+    C --> D{"Parse ints and divide?"}
+    D -- Success --> E["Print a // b"]
+    D -- ZeroDivisionError --> F["Print Error Code"]
+    D -- ValueError --> G["Print Error Code"]
+    E --> H{"More test cases?"}
+    F --> H
+    G --> H
+    H -- Yes --> C
+    H -- No --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(T)`
+- Space Complexity: `O(1)`
+
+---
+
 # Problem Statement 32: collections.Counter() (Shoe Shop)
 
 ## Problem Idea

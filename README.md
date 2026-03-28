@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **34 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **37 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -240,6 +240,9 @@ Phase 2 focuses on solving **34 foundational HackerRank problems** while reinfor
 | 32 | collections.Counter() | Frequency Counting, Inventory Simulation |
 | 33 | Word Positions Mapping | Hash Maps, Index Tracking, Query Lookup |
 | 34 | Student Averages (Zipped-style) | Matrix-like Input Handling, Aggregation, Formatting |
+| 35 | Calendar Module | Date Handling, Weekday Computation, Built-in Modules |
+| 36 | Polynomials | Expression Evaluation, Boolean Validation, Input Parsing |
+| 37 | Exceptions | Try/Except, ZeroDivisionError, ValueError Handling |
 
 #### Key Learning Points
 
@@ -287,9 +290,12 @@ Phase 2 focuses on solving **34 foundational HackerRank problems** while reinfor
 - ✅ Managing stock with frequency counters
 - ✅ Mapping repeated words to occurrence positions
 - ✅ Computing row/column style averages from tabular input
+- ✅ Solving date-based problems using Python's calendar module
+- ✅ Evaluating polynomial expressions against expected values
+- ✅ Writing exception-safe integer division for noisy input
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 34 problems
+- ✅ Created `Hackerrank(easy).py` with all 37 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -302,7 +308,7 @@ Phase 2 focuses on solving **34 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 34 solved problems)
+│   ├── Hackerrank(easy).py          (all 37 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -323,6 +329,8 @@ Phase-2/
 - Set-heavy problems strengthened collection operations and mathematical set logic
 - Math-heavy problems reinforced confidence with Python's numeric power and big integer support
 - Counter and mapping problems improved data-structure thinking for real interview-style inputs
+- Calendar and polynomial checks improved comfort with Python standard modules and expression validation
+- Exception-handling practice improved robustness for real-world input scenarios
 
 ---
 
