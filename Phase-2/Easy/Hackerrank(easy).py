@@ -916,5 +916,35 @@ for i in range(thickness):
 
 # Problem Statement 39
 """
-
+Input Format
+A single line containing the space separated values of  and .
+Output Format
+Output the design pattern.
+Sample Input
+9 27
+Sample Output
+------------.|.------------
+---------.|..|..|.---------
+------.|..|..|..|..|.------
+---.|..|..|..|..|..|..|.---
+---------WELCOME----------
+---.|..|..|..|..|..|..|.---
+------.|..|..|..|..|.------
+---------.|..|..|.---------
+------------.|.------------
 """
+# N is height, M is width
+N, M = map(int, input().split())
+
+# Top Section
+for i in range(1, N, 2):
+    pattern = (".|." * i)
+    print(pattern.center(M, '-'))
+
+# Middle "WELCOME" Section
+print("WELCOME".center(M, '-'))
+
+# Bottom Section (Reverse of Top)
+for i in range(N-2, -1, -2):
+    pattern = (".|." * i)
+    print(pattern.center(M, '-'))
