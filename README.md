@@ -199,7 +199,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **37 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **40 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -243,6 +243,9 @@ Phase 2 focuses on solving **37 foundational HackerRank problems** while reinfor
 | 35 | Calendar Module | Date Handling, Weekday Computation, Built-in Modules |
 | 36 | Polynomials | Expression Evaluation, Boolean Validation, Input Parsing |
 | 37 | Exceptions | Try/Except, ZeroDivisionError, ValueError Handling |
+| 38 | Text Alignment (Logo) | String Alignment, Pattern Printing, Layout Construction |
+| 39 | Designer Door Mat | Symmetric Patterns, Center Formatting, Loop Design |
+| 40 | Text Wrap | textwrap Module, String Formatting, Width-based Layout |
 
 #### Key Learning Points
 
@@ -293,9 +296,12 @@ Phase 2 focuses on solving **37 foundational HackerRank problems** while reinfor
 - ✅ Solving date-based problems using Python's calendar module
 - ✅ Evaluating polynomial expressions against expected values
 - ✅ Writing exception-safe integer division for noisy input
+- ✅ Building multi-part ASCII logos with alignment methods
+- ✅ Designing symmetric text patterns with centered formatting
+- ✅ Wrapping long strings cleanly using the textwrap module
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 37 problems
+- ✅ Created `Hackerrank(easy).py` with all 40 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -308,7 +314,7 @@ Phase 2 focuses on solving **37 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 37 solved problems)
+│   ├── Hackerrank(easy).py          (all 40 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -331,6 +337,8 @@ Phase-2/
 - Counter and mapping problems improved data-structure thinking for real interview-style inputs
 - Calendar and polynomial checks improved comfort with Python standard modules and expression validation
 - Exception-handling practice improved robustness for real-world input scenarios
+- Alignment and mat-design problems improved confidence in output-format driven challenges
+- Text wrapping practice strengthened practical formatting skills for clean display output
 
 ---
 

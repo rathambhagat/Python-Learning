@@ -178,6 +178,149 @@ flowchart TD
 
 ---
 
+# Problem Statement 38: Text Alignment (HackerRank Logo)
+
+## Problem Idea
+Print the HackerRank logo using character alignment methods: `rjust`, `ljust`, and `center`.
+
+---
+
+## Explanation
+The logo has five regions:
+- Top cone
+- Top pillars
+- Middle belt
+- Bottom pillars
+- Bottom cone
+
+Each region is printed using loops and string multiplication with alignment formatting. The thickness controls the size of all sections.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read odd integer `thickness` and set `c = 'H'`.
+3. Print top cone using `rjust` and `ljust`.
+4. Print top pillars using `center`.
+5. Print middle belt using `center`.
+6. Print bottom pillars using `center`.
+7. Print bottom cone using `rjust`, `ljust`, then outer `rjust`.
+8. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input thickness/]
+    B --> C["Set c = 'H'"]
+    C --> D["Print top cone"]
+    D --> E["Print top pillars"]
+    E --> F["Print middle belt"]
+    F --> G["Print bottom pillars"]
+    G --> H["Print bottom cone"]
+    H --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(t^2)` where `t` is thickness (total printed characters dominate)
+- Space Complexity: `O(1)` auxiliary
+
+---
+
+# Problem Statement 39: Designer Door Mat
+
+## Problem Idea
+Given dimensions `N x M`, print a symmetric door mat pattern with `.|.` motifs and a centered `WELCOME` line.
+
+---
+
+## Explanation
+The pattern has three parts:
+- Top half: increasing motif counts (`1, 3, 5, ...`)
+- Middle line: `WELCOME`
+- Bottom half: reverse of top half
+
+Each line is centered within width `M` and padded with `-`.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read `N` and `M`.
+3. For odd `i` from `1` to `N-1`, print `(".|." * i).center(M, '-')`.
+4. Print `"WELCOME".center(M, '-')`.
+5. For odd `i` from `N-2` down to `1`, print centered motif lines.
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input N, M/]
+    B --> C["Print top pattern lines"]
+    C --> D["Print centered WELCOME"]
+    D --> E["Print bottom pattern lines (reverse)"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(N * M)`
+- Space Complexity: `O(M)` per line string construction
+
+---
+
+# Problem Statement 40: Text Wrap
+
+## Problem Idea
+Given a string and width, wrap the string into lines where each line has at most `max_width` characters.
+
+---
+
+## Explanation
+The solution uses Python's `textwrap.fill`:
+- Automatically inserts newline breaks at the given width.
+- Returns one formatted multi-line string.
+
+Then the wrapped result is printed.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read `string` and `max_width`.
+3. Compute `result = textwrap.fill(string, max_width)`.
+4. Print `result`.
+5. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input string/]
+    B --> C[/Input max_width/]
+    C --> D["result = textwrap.fill(string, max_width)"]
+    D --> E["Print result"]
+    E --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)` where `n` is string length
+- Space Complexity: `O(n)` for wrapped output string
+
+---
+
 # Problem Statement 32: collections.Counter() (Shoe Shop)
 
 ## Problem Idea
