@@ -1,6 +1,5 @@
 # 🐍 PROJECT MAYHEM: Python Mastery Plan
 
-> *"Sirf code karne ka re baba."*
 ## 👥 Who Are We
 Two 2nd-year engineering students who got tired of watching tutorials and decided to actually build something. No bootcamp. No paid course. Just a structured plan, a Discord server with a constitution, and the mutual fear of disappointing each other.
 
