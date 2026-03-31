@@ -1004,3 +1004,8 @@ for _ in range(n):
     total_marks += int(data[marks_index])
 average = total_marks / n
 print(f"{average:.2f}")
+
+# Problem Statement 42
+"""
+
+"""
