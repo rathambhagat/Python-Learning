@@ -321,6 +321,108 @@ flowchart TD
 
 ---
 
+# Problem Statement 41: Collections.namedtuple()
+
+## Problem Idea
+Given a table of student records where columns can appear in any order, find the average of the `MARKS` column.
+
+---
+
+## Explanation
+The solution dynamically locates the `MARKS` column index from the header row, then sums marks from each student row and computes the average.
+
+This avoids hardcoding column positions and works even if the column order changes.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `n` (number of students).
+3. Read header columns and split into list.
+4. Find `marks_index = columns.index('MARKS')`.
+5. Initialize `total_marks = 0`.
+6. Loop `n` times:
+   - Read row data.
+   - Add `int(data[marks_index])` to `total_marks`.
+7. Compute `average = total_marks / n`.
+8. Print average with 2 decimal places.
+9. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input n/]
+    B --> C[/Input column names/]
+    C --> D["marks_index = index of MARKS"]
+    D --> E["total_marks = 0"]
+    E --> F["Read each student row and add MARKS"]
+    F --> G["average = total_marks / n"]
+    G --> H["Print average (2 decimals)"]
+    H --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(n)`
+- Space Complexity: `O(k)` for header storage (`k` columns)
+
+---
+
+# Problem Statement 42: Check Subset
+
+## Problem Idea
+For each test case, check whether set `A` is a subset of set `B` and print `True` or `False`.
+
+---
+
+## Explanation
+The solution uses Python's built-in `issubset` method:
+- `A.issubset(B)` returns `True` if every element of `A` is present in `B`.
+- Otherwise it returns `False`.
+
+This check is repeated for all test cases.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer `T`.
+3. Repeat `T` times:
+   - Read size and elements of set `A`.
+   - Read size and elements of set `B`.
+   - Print `A.issubset(B)`.
+4. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input T/]
+    B --> C["Read set A"]
+    C --> D["Read set B"]
+    D --> E{"A.issubset(B)?"}
+    E -- Yes --> F["Print True"]
+    E -- No --> G["Print False"]
+    F --> H{"More test cases?"}
+    G --> H
+    H -- Yes --> C
+    H -- No --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(T * min(|A|, |B|))` average-case subset checks
+- Space Complexity: `O(|A| + |B|)` per test case
+
+---
+
 # Problem Statement 32: collections.Counter() (Shoe Shop)
 
 ## Problem Idea

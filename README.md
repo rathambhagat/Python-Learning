@@ -198,7 +198,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **40 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **42 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -245,6 +245,8 @@ Phase 2 focuses on solving **40 foundational HackerRank problems** while reinfor
 | 38 | Text Alignment (Logo) | String Alignment, Pattern Printing, Layout Construction |
 | 39 | Designer Door Mat | Symmetric Patterns, Center Formatting, Loop Design |
 | 40 | Text Wrap | textwrap Module, String Formatting, Width-based Layout |
+| 41 | Collections Marks Average | Dynamic Column Parsing, Aggregation, Precision Formatting |
+| 42 | Check Subset | Set Theory, Subset Validation, Multi-testcase Handling |
 
 #### Key Learning Points
 
@@ -298,9 +300,11 @@ Phase 2 focuses on solving **40 foundational HackerRank problems** while reinfor
 - ✅ Building multi-part ASCII logos with alignment methods
 - ✅ Designing symmetric text patterns with centered formatting
 - ✅ Wrapping long strings cleanly using the textwrap module
+- ✅ Parsing flexible column-order input to compute aggregates
+- ✅ Solving subset checks efficiently using Python set APIs
 
 **Code Organization:**
-- ✅ Created `Hackerrank(easy).py` with all 40 problems
+- ✅ Created `Hackerrank(easy).py` with all 42 problems
 - ✅ Created `Explanation and algorithm.md` with:
   - Problem statement for each
   - Clear explanation of approach
@@ -313,7 +317,7 @@ Phase 2 focuses on solving **40 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 40 solved problems)
+│   ├── Hackerrank(easy).py          (all 42 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -338,6 +342,8 @@ Phase-2/
 - Exception-handling practice improved robustness for real-world input scenarios
 - Alignment and mat-design problems improved confidence in output-format driven challenges
 - Text wrapping practice strengthened practical formatting skills for clean display output
+- Named-column average problems improved adaptability to changing input schemas
+- Subset validation strengthened confidence in mathematical set relationships
 
 ---
 
