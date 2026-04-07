@@ -198,7 +198,7 @@ Key Takeaways
 
 ### What We Did in Phase 2
 
-Phase 2 focuses on solving **42 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
+Phase 2 focuses on solving **43 foundational HackerRank problems** while reinforcing core Python concepts and problem-solving patterns.
 
 #### Problems Solved
 
@@ -247,6 +247,7 @@ Phase 2 focuses on solving **42 foundational HackerRank problems** while reinfor
 | 40 | Text Wrap | textwrap Module, String Formatting, Width-based Layout |
 | 41 | Collections Marks Average | Dynamic Column Parsing, Aggregation, Precision Formatting |
 | 42 | Check Subset | Set Theory, Subset Validation, Multi-testcase Handling |
+| 43 | Deque Operations | Double-ended Queue, append/pop Operations, FIFO/LIFO Hybrid |
 
 #### Key Learning Points
 
@@ -302,6 +303,8 @@ Phase 2 focuses on solving **42 foundational HackerRank problems** while reinfor
 - ✅ Wrapping long strings cleanly using the textwrap module
 - ✅ Parsing flexible column-order input to compute aggregates
 - ✅ Solving subset checks efficiently using Python set APIs
+- ✅ Working with deques for efficient double-ended operations
+- ✅ Performing append/pop operations from both ends of a queue
 
 **Code Organization:**
 - ✅ Created `Hackerrank(easy).py` with all 42 problems
@@ -317,7 +320,7 @@ Phase 2 focuses on solving **42 foundational HackerRank problems** while reinfor
 ```
 Phase-2/
 ├── Easy/
-│   ├── Hackerrank(easy).py          (all 42 solved problems)
+│   ├── Hackerrank(easy).py          (all 43 solved problems)
 │   └── Explanation and algorithm.md (documentation)
 ```
 
@@ -344,6 +347,7 @@ Phase-2/
 - Text wrapping practice strengthened practical formatting skills for clean display output
 - Named-column average problems improved adaptability to changing input schemas
 - Subset validation strengthened confidence in mathematical set relationships
+- Deque problems improved understanding of efficient bidirectional data structures
 
 ---
 
