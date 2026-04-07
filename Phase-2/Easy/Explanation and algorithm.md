@@ -423,6 +423,65 @@ flowchart TD
 
 ---
 
+# Problem Statement 43: Deque Operations
+
+## Problem Idea
+Perform four deque operations (`append`, `appendleft`, `pop`, `popleft`) on an initially empty deque and print the final result.
+
+---
+
+## Explanation
+A deque (double-ended queue) is a sequence supporting efficient insertion and deletion at both ends.
+- `append(x)`: Add element to the right end
+- `appendleft(x)`: Add element to the left end
+- `pop()`: Remove and return the rightmost element
+- `popleft()`: Remove and return the leftmost element
+
+The program reads N commands and applies each operation sequentially, then prints remaining elements.
+
+---
+
+## Step-by-Step Algorithm
+1. Start.
+2. Read integer N (number of operations).
+3. Initialize empty deque `d`.
+4. For each of N operations:
+   - Parse operation name and value.
+   - Call corresponding deque method.
+5. Print deque elements space-separated.
+6. End.
+
+---
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input N/]
+    B --> C["d = empty deque"]
+    C --> D[/Read operation and value/]
+    D --> E{Operation type?}
+    E -- append --> F["d.append(x)"]
+    E -- appendleft --> G["d.appendleft(x)"]
+    E -- pop --> H["d.pop()"]
+    E -- popleft --> I["d.popleft()"]
+    F --> J{"More operations?"}
+    G --> J
+    H --> J
+    I --> J
+    J -- Yes --> D
+    J -- No --> K["Print d elements"]
+    K --> Z([End])
+```
+
+---
+
+## Time and Space Complexity
+- Time Complexity: `O(N)` — each operation is O(1), total N operations
+- Space Complexity: `O(d)` — where d is the number of elements remaining in the deque
+
+---
+
 # Problem Statement 32: collections.Counter() (Shoe Shop)
 
 ## Problem Idea
