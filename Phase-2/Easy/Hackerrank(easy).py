@@ -1036,3 +1036,44 @@ for _ in range(T):
     
     # Check if A is a subset of B
     print(A.issubset(B))
+
+# Problem Statement 43
+"""
+Task
+Perform append, pop, popleft and appendleft methods on an empty deque d.
+Input Format
+The first line contains an integer N. the number of operations.
+The next N lines contains the space separated names of methods and their values.
+Constraints
+0 < N < 100
+Output Format
+Print the space separated elements of deque d.
+"""
+
+from collections import deque
+import sys
+
+def main():
+    data = sys.stdin.read().strip().splitlines()
+    if not data:
+        return
+    n = int(data[0].strip())
+    d = deque()
+    for i in range(1, n + 1):
+        line = data[i].strip()
+        if not line:
+            continue
+        parts = line.split()
+        cmd = parts[0]
+        if cmd == "append":
+            d.append(int(parts[1]))
+        elif cmd == "appendleft":
+            d.appendleft(int(parts[1]))
+        elif cmd == "pop":
+            d.pop()
+        elif cmd == "popleft":
+            d.popleft()
+    print(*d)
+
+if __name__ == "__main__":
+    main()
